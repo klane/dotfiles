@@ -33,3 +33,6 @@ scoop install msys2
 
 # install additional cygwin programs
 & "$env:SCOOP\apps\cygwin\setup-x86_64.exe" -n -q -P curl,fish,fontconfig,wget,zsh
+
+# run install.sh
+cygwin -c 'curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash'
