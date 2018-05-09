@@ -21,6 +21,11 @@ fi
 # install Python packages
 pip install -r $DIR/requirements.txt
 
+# install Powerline fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+./fonts/install.sh
+rm -rf fonts
+
 # install fisherman
 curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 fish -c 'fisher omf/theme-agnoster'
