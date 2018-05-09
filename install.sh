@@ -18,3 +18,9 @@ if [ "$(uname)" == "Darwin" ]; then
 else # assume Windows
     ln -s $DIR/.minttyrc ~
 fi
+
+# install Python packages
+pip install autopep8
+pip install flake8
+pip install pylint
+pip install pipenv

@@ -38,9 +38,3 @@ cyg-get fontconfig
 cyg-get wget
 cyg-get fish
 cyg-get zsh
-
-pip install flake8
-pip install pylint
-pip install autopep8
-pip install pipenv
-pip install powerline-status
