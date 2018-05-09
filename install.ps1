@@ -27,14 +27,9 @@ scoop install sublime-text
 scoop install vscode
 
 # install other programs
+scoop install cygwin
 scoop install flux
 scoop install msys2
 
-#
-sudo choco install cygwin -y
-sudo choco install cyg-get -y
-cyg-get curl
-cyg-get fontconfig
-cyg-get wget
-cyg-get fish
-cyg-get zsh
+# install additional cygwin programs
+& "$env:SCOOP\apps\cygwin\setup-x86_64.exe" -n -q -P curl,fish,fontconfig,wget,zsh
