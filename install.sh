@@ -20,7 +20,4 @@ else # assume Windows
 fi
 
 # install Python packages
-pip install autopep8
-pip install flake8
-pip install pylint
-pip install pipenv
+pip install -r $DIR/requirements.txt
