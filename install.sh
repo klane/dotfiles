@@ -1,7 +1,7 @@
 gecho () {
-	GREEN="$(tput setaf 2; tput bold)"
-	RESET="$(tput sgr0)"
-	echo "${GREEN}$1${RESET}"
+    GREEN="$(tput setaf 2; tput bold)"
+    RESET="$(tput sgr0)"
+    echo "${GREEN}$1${RESET}"
 }
 
 DIR=~/project/dotfiles
@@ -22,7 +22,7 @@ echo "eval (pipenv --completion)" > $FISHCMPL/pipenv.fish
 
 if [ "$(uname)" == "Darwin" ]; then
     # install homebrew
-	# link Mac-specific files
+    # link Mac-specific files
 else # assume Windows
     ln -s $DIR/.minttyrc ~
 fi
