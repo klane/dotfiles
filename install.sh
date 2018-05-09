@@ -3,8 +3,7 @@ FISHDIR=~/.config/fish
 FISHCMPL=$FISHDIR/completions
 
 [ ! -d $DIR ] && mkdir -p $DIR
-[ ! -d $FISHDIR ] && mkdir -p $FISHDIR
-[ ! -d $FISHCMPL ] && mkdir $FISHCMPL
+[ ! -d $FISHCMPL ] && mkdir -p $FISHCMPL
 
 git clone https://github.com/klane/dotfiles.git $DIR
 
