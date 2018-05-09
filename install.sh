@@ -21,3 +21,7 @@ fi
 
 # install Python packages
 pip install -r $DIR/requirements.txt
+
+# install fisherman
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fish -c 'fisher omf/theme-agnoster'
