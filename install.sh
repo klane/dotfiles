@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 gecho () {
     GREEN="$(tput setaf 2; tput bold)"
     RESET="$(tput sgr0)"
