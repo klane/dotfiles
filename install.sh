@@ -29,7 +29,8 @@ else # assume Windows
 fi
 
 # install Python packages
-gecho 'Installing Python packages'
+gecho 'Upgrading pip and installing Python packages'
+python -m pip install --upgrade pip
 pip install -r $DIR/requirements.txt
 
 # install Powerline fonts
