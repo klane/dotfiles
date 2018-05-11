@@ -1,4 +1,5 @@
-﻿# add necessary buckets
+﻿
+# add necessary buckets
 #scoop bucket add extras
 #scoop bucket add versions
 
@@ -32,7 +33,7 @@ scoop install cygwin
 #scoop install msys2
 
 # install additional cygwin programs
-& "$env:SCOOP\apps\cygwin\setup-x86_64.exe" -n -q -P curl,fish,fontconfig,zsh
+& "$env:USERPROFILE\scoop\apps\cygwin\current\setup-x86_64.exe" -n -q -P curl,fish,fontconfig,zsh
 
 # run install.sh
 cygwin -c 'curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash'
