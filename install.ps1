@@ -1,4 +1,6 @@
-﻿
+﻿$CYGWIN_INSTALL = "$env:USERPROFILE\scoop\apps\cygwin\current"
+$env:CYGWIN_ROOT = "$CYGWIN_INSTALL\root"
+
 # add necessary buckets
 #scoop bucket add extras
 #scoop bucket add versions
@@ -33,7 +35,8 @@ scoop install cygwin
 #scoop install msys2
 
 # install additional cygwin programs
-& "$env:USERPROFILE\scoop\apps\cygwin\current\setup-x86_64.exe" -n -q -P curl,fish,fontconfig,zsh
+
+& "$CYGWIN_INSTALL\setup-x86_64.exe" -n -q -R "$env:CYGWIN_ROOT" -P curl,fish,fontconfig,zsh
 
 # run install.sh
 cygwin -c 'curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash'
