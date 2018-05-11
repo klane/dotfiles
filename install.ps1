@@ -1,4 +1,5 @@
-﻿$CYGWIN_INSTALL = "$env:USERPROFILE\scoop\apps\cygwin\current"
+﻿# set variables
+$CYGWIN_INSTALL = "$env:USERPROFILE\scoop\apps\cygwin\current"
 $env:CYGWIN_ROOT = "$CYGWIN_INSTALL\root"
 
 # add necessary buckets
