@@ -23,13 +23,13 @@ ln -s $DIR/.zshrc ~
 ln -s $DIR/config.fish $FISHDIR
 echo "eval (pipenv --completion)" > $FISHCMPL/pipenv.fish
 
-if [ "$(uname)" == "Darwin" ]; then
+# if [ "$(uname)" == "Darwin" ]; then
     # install homebrew
     # link Mac-specific files
-else
+# else
     # assume Windows
-    ln -s $DIR/.minttyrc ~
-fi
+ln -s $DIR/.minttyrc ~
+# fi
 
 # install Python packages
 gecho 'Upgrading pip and installing Python packages'
