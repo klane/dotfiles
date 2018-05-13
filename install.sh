@@ -39,7 +39,9 @@ pip install -r $DIR/requirements.txt
 # install Powerline fonts
 gecho 'Installing Powerline fonts'
 git clone https://github.com/powerline/fonts.git --depth=1
-./fonts/install.sh
+cd fonts
+./install.sh
+cd ..
 rm -rf fonts
 
 # install fisherman
