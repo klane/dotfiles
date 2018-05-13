@@ -24,7 +24,8 @@ echo "eval (pipenv --completion)" > $FISHCMPL/pipenv.fish
 if [ "$(uname)" == "Darwin" ]; then
     # install homebrew
     # link Mac-specific files
-else # assume Windows
+else
+    # assume Windows
     ln -s $DIR/.minttyrc ~
 fi
 
