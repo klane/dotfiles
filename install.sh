@@ -10,11 +10,13 @@ FISHDIR=~/.config/fish
 FISHCMPL=$FISHDIR/completions
 
 gecho 'Creating directories'
-[ ! -d $DIR ] && mkdir -p $DIR
+[ ! -d project ] && mkdir project
 [ ! -d $FISHCMPL ] && mkdir -p $FISHCMPL
 
 gecho 'Cloning repository'
-git clone https://github.com/klane/dotfiles.git $DIR
+cd project
+git clone https://github.com/klane/dotfiles.git
+cd ~
 
 gecho 'Linking files'
 ln -s $DIR/.zshrc ~
