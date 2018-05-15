@@ -29,6 +29,7 @@ echo "eval (pipenv --completion)" > $FISHCMPL/pipenv.fish
 # else
     # assume Windows
 ln -s $DIR/.minttyrc ~
+export PATH=/cygdrive/c/Users/$USER/scoop/shims:$PATH
 # fi
 
 # install Python packages
