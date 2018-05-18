@@ -36,8 +36,9 @@ scoop install cygwin
 #scoop install msys2
 
 # install additional cygwin programs
-
-& "$CYGWIN_INSTALL\setup-x86_64.exe" -n -q -R "$env:CYGWIN_ROOT" -P curl,fish,fontconfig,zsh
+$CYGWIN_EXE = "$CYGWIN_INSTALL\setup-x86_64.exe"
+$CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -P curl,fish,fontconfig,zsh"
+Start-Process $CYGWIN_EXE -ArgumentList $CYGWIN_ARGS
 
 # run install.sh
 cygwin -c 'curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash'
