@@ -39,3 +39,4 @@ $CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -s https://mirrors.kernel.org/sourcewa
 mkdir $env:CYGWIN_ROOT
 Invoke-WebRequest -Uri "https://cygwin.com/setup-x86_64.exe" -OutFile $CYGWIN_EXE
 Start-Process $CYGWIN_EXE -ArgumentList $CYGWIN_ARGS
+Set-Alias -Name "cygwin" -Value "$env:CYGWIN_ROOT\Cygwin.bat"
