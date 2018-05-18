@@ -1,6 +1,5 @@
 ﻿# set variables
-$CYGWIN_INSTALL = "$env:USERPROFILE\scoop\apps\cygwin\current"
-$env:CYGWIN_ROOT = "$CYGWIN_INSTALL\root"
+$env:CYGWIN_ROOT = "$env:ChocolateyToolsLocation\cygwin"
 
 # add necessary buckets
 #scoop bucket add extras
@@ -31,13 +30,13 @@ scoop install python
 #scoop install vscode
 
 # install other programs
-scoop install cygwin
+sudo choco install cygwin -y
 #scoop install flux
 #scoop install msys2
 
 # install additional cygwin programs
-$CYGWIN_EXE = "$CYGWIN_INSTALL\setup-x86_64.exe"
-$CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -P curl,fish,fontconfig,zsh"
+$CYGWIN_EXE = "$env:CYGWIN_ROOT\cygwinsetup.exe"
+$CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -P curl,fish,fontconfig,wget,zsh"
 Start-Process $CYGWIN_EXE -ArgumentList $CYGWIN_ARGS
 
 # run install.sh
