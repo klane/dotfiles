@@ -41,6 +41,7 @@ pip install -r $DIR/requirements.txt
 gecho 'Installing Powerline fonts'
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
+dos2unix install.sh
 ./install.sh
 cd ..
 rm -rf fonts

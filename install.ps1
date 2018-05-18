@@ -36,5 +36,5 @@ sudo choco install cygwin -y
 
 # install additional cygwin programs
 $CYGWIN_EXE = "$env:CYGWIN_ROOT\cygwinsetup.exe"
-$CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -P curl,fish,fontconfig,wget,zsh"
+$CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -P curl,dos2unix,fish,fontconfig,wget,zsh"
 Start-Process $CYGWIN_EXE -ArgumentList $CYGWIN_ARGS
