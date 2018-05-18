@@ -38,6 +38,3 @@ sudo choco install cygwin -y
 $CYGWIN_EXE = "$env:CYGWIN_ROOT\cygwinsetup.exe"
 $CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -P curl,fish,fontconfig,wget,zsh"
 Start-Process $CYGWIN_EXE -ArgumentList $CYGWIN_ARGS
-
-# run install.sh
-cygwin -c 'curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash'
