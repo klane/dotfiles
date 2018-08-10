@@ -31,7 +31,7 @@ scoop install python
 #scoop install msys2
 
 # set Cygwin variables
-$packages = "curl,dos2unix,fish,fontconfig,wget,zsh"
+$packages = "curl,dos2unix,fish,fontconfig,git,wget,zsh"
 $url = "http://cygwin.mirror.constant.com"
 $env:CYGWIN_ROOT = "$env:USERPROFILE\cygwin"
 $CYGWIN_EXE = "$env:CYGWIN_ROOT\cygwinsetup.exe"
