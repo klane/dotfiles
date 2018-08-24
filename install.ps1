@@ -34,7 +34,7 @@ scoop install python
 # set Cygwin variables
 $packages = "curl,dos2unix,fish,fontconfig,git,wget,zsh"
 $url = "http://cygwin.mirror.constant.com"
-$env:CYGWIN_ROOT = "$env:USERPROFILE\cygwin"
+$env:CYGWIN_ROOT = "$env:HOMEDRIVE\cygwin"
 $CYGWIN_EXE = "$env:CYGWIN_ROOT\cygwinsetup.exe"
 $CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -l $env:CYGWIN_ROOT -s $url -P $packages"
 
