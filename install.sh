@@ -21,6 +21,7 @@ git clone https://github.com/klane/dotfiles.git
 cd ~
 
 gecho 'Linking files'
+ln $DIR/.gitconfig ~
 ln $DIR/.zshrc ~
 ln $DIR/config.fish $FISHDIR
 echo "eval (pipenv --completion)" > $FISHCMPL/pipenv.fish
