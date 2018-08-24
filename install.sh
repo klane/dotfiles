@@ -21,8 +21,8 @@ git clone https://github.com/klane/dotfiles.git
 cd ~
 
 gecho 'Linking files'
-ln -s $DIR/.zshrc ~
-ln -s $DIR/config.fish $FISHDIR
+ln $DIR/.zshrc ~
+ln $DIR/config.fish $FISHDIR
 echo "eval (pipenv --completion)" > $FISHCMPL/pipenv.fish
 
 # if [ "$(uname)" == "Darwin" ]; then
@@ -30,7 +30,7 @@ echo "eval (pipenv --completion)" > $FISHCMPL/pipenv.fish
     # link Mac-specific files
 # else
     # assume Windows
-ln -s $DIR/.minttyrc ~
+ln $DIR/.minttyrc ~
 export PATH=/cygdrive/c/Users/$USER/scoop/shims:$PATH
 # fi
 
