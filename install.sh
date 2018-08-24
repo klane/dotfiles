@@ -5,8 +5,10 @@ gecho () {
     echo "${GREEN}$1${RESET}"
 }
 
-DIR=~/project/dotfiles
-FISHDIR=~/.config/fish
+ cd ~ # ensure installation starts in the home directory
+
+DIR=./project/dotfiles
+FISHDIR=./.config/fish
 FISHCMPL=$FISHDIR/completions
 
 gecho 'Creating directories'
