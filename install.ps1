@@ -22,6 +22,7 @@ scoop install python
 #scoop install jetbrains-toolbox
 #scoop install notepadplusplus
 #scoop install rstudio
+#scoop install slack
 #scoop install sourcetree
 #scoop install sqlitebrowser
 #scoop install sublime-text
