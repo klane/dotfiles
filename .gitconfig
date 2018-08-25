@@ -1,3 +1,6 @@
 [user]
 	name = Kevin Lane
 	email = lane.kevin.a@gmail.com
+[core]
+	autocrlf = false
+	eol = lf
