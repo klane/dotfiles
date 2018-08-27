@@ -11,5 +11,6 @@ curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash
 ```powershell
 $ScriptFromGithHub = Invoke-WebRequest https://raw.githubusercontent.com/klane/dotfiles/master/install.ps1
 Invoke-Expression $($ScriptFromGithHub.Content)
-cygwin -c 'curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash'
+cygwin
+curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash
 ```
