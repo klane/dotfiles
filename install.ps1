@@ -1,4 +1,4 @@
-﻿# add necessary buckets
+# add necessary buckets
 #scoop bucket add extras
 #scoop bucket add versions
 
