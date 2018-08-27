@@ -31,6 +31,7 @@ rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
 echo 'eval (pipenv --completion)' > ~/.config/fish/completions/pipenv.fish
 if [[ $OSLOW == *windows* ]]; then
     rsync -a --link-dest=$DIR $DIR/.minttyrc ~
+    ln $DIR/.gitconfig $USERPROFILE/.gitconfig
 fi
 
 gecho 'Upgrading pip and installing Python packages'
