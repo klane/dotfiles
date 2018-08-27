@@ -5,47 +5,40 @@ gecho () {
     echo "${GREEN}$1${RESET}"
 }
 
-cd ~ # ensure installation starts in the home directory
-
-DIR=./project/dotfiles
-FISHDIR=./.config/fish
-FISHCMPL=$FISHDIR/completions
+DIR=~/project/dotfiles
+FISHDIR=~/.config/fish/completions
 OSLOW=$(echo $OS | awk '{print tolower($0)}')
 REPO=https://github.com/klane/dotfiles.git
 GITCONFIG=https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
 
 gecho 'Creating directories'
 [ ! -d project ] && mkdir project
-[ ! -d $FISHCMPL ] && mkdir -p $FISHCMPL
+[ ! -d $FISHDIR ] && mkdir -p $FISHDIR
 
 gecho 'Copying .gitconfig'
-wget --no-hsts $GITCONFIG
+wget --no-hsts -O ~/.gitconfig $GITCONFIG
 
 gecho 'Cloning repository'
-cd project
 if [[ $OSLOW == *windows* ]]; then
-    /cygdrive/c/ProgramData/scoop/shims/git clone $REPO
+    REPODIR=/cygwin$DIR # account for Windows program paths
+    /cygdrive/c/ProgramData/scoop/shims/git clone $REPO $REPODIR/
 else
-    git clone $REPO
+    REPODIR=$DIR
+    git clone $REPO $REPODIR/
 fi
-cd ~
-rm .gitconfig
 
 gecho 'Linking files'
-#TODO use rsync instead
-ln $DIR/.gitconfig ~
-ln $DIR/.zshrc ~
-ln $DIR/config.fish $FISHDIR
-echo 'eval (pipenv --completion)' > $FISHCMPL/pipenv.fish
+rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
+echo 'eval (pipenv --completion)' > $FISHDIR/pipenv.fish
 
 if [[ $OSLOW == *windows* ]]; then
-    ln $DIR/.minttyrc ~
+    rsync -a --link-dest=$DIR $DIR/.minttyrc ~
 fi
 
 # install Python packages
 gecho 'Upgrading pip and installing Python packages'
 python3 -m pip install --upgrade pip
-pip install -r $DIR/requirements.txt
+pip install -r $REPODIR/requirements.txt
 
 # install Powerline fonts
 gecho 'Installing Powerline fonts'

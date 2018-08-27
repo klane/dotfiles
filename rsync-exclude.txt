@@ -1,0 +1,5 @@
+*.txt
+.git/
+.minttyrc
+install.*
+README.md
