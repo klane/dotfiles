@@ -5,7 +5,8 @@ gecho () {
     echo "${GREEN}$1${RESET}"
 }
 
-DIR=~/project/dotfiles
+cd ~ # ensure installation starts in the home directory
+DIR=./project/dotfiles # use . instead of ~ to avoid path issue in Cygwin
 OSLOW=$(echo $OS | awk '{print tolower($0)}')
 REPO=https://github.com/klane/dotfiles.git
 GITCONFIG=https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
@@ -19,11 +20,9 @@ fish -c 'fisher omf/theme-agnoster pipenv'
 
 gecho 'Cloning repository'
 if [[ $OSLOW == *windows* ]]; then
-    REPODIR=/cygwin$DIR # account for Windows program paths
-    /cygdrive/c/ProgramData/scoop/shims/git clone $REPO $REPODIR/
+    /cygdrive/c/ProgramData/scoop/shims/git clone $REPO $DIR/
 else
-    REPODIR=$DIR
-    git clone $REPO $REPODIR/
+    git clone $REPO $DIR/
 fi
 
 gecho 'Linking files'
@@ -36,7 +35,7 @@ fi
 
 gecho 'Upgrading pip and installing Python packages'
 python3 -m pip install --upgrade pip
-pip install -r $REPODIR/requirements.txt
+pip install -r $DIR/requirements.txt
 
 gecho 'Installing Powerline fonts'
 git clone https://github.com/powerline/fonts.git --depth=1
