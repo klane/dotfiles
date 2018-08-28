@@ -8,3 +8,4 @@ end
 set -x PIPENV_VENV_IN_PROJECT true
 set -x SHELL fish
 set fish_greeting
+eval (direnv hook fish)

@@ -32,6 +32,15 @@ if is_windows; then
     ln $DIR/.gitconfig $USERPROFILE/.gitconfig
 fi
 
+if is_windows; then
+    gecho 'Installing direnv'
+    DIRENV_VERSION=v2.16.0
+    DIRENV=/usr/local/bin/direnv.exe
+    curl -Lo $DIRENV "https://github.com/direnv/direnv/releases/download/"\
+                     "$DIRENV_VERSION/direnv.windows-amd64.exe"
+    chmod +x $DIRENV
+fi
+
 gecho 'Installing fisherman and fish plugins'
 curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
 fish -c 'fisher'
