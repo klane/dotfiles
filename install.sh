@@ -17,7 +17,7 @@ wget --no-hsts -O ~/.gitconfig $GITCONFIG
 
 gecho 'Installing fisherman and fish plugins'
 curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
-fish -c 'fisher omf/theme-agnoster pipenv'
+fish -c 'fisher'
 echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 
 gecho 'Cloning repository'
