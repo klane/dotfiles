@@ -7,6 +7,7 @@ gecho () {
 
 cd ~ # ensure installation starts in the home directory
 DIR=./project/dotfiles # use . instead of ~ to avoid path issue in Cygwin
+FISHDIR=~/.config/fish
 OSLOW=$(echo $OS | awk '{print tolower($0)}')
 REPO=https://github.com/klane/dotfiles.git
 GITCONFIG=https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
@@ -15,8 +16,9 @@ gecho 'Copying .gitconfig'
 wget --no-hsts -O ~/.gitconfig $GITCONFIG
 
 gecho 'Installing fisherman and fish plugins'
-curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
 fish -c 'fisher omf/theme-agnoster pipenv'
+echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 
 gecho 'Cloning repository'
 if [[ $OSLOW == *windows* ]]; then
@@ -27,7 +29,6 @@ fi
 
 gecho 'Linking files'
 rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
-echo 'eval (pipenv --completion)' > ~/.config/fish/completions/pipenv.fish
 if [[ $OSLOW == *windows* ]]; then
     rsync -a --link-dest=$DIR $DIR/.minttyrc ~
     ln $DIR/.gitconfig $USERPROFILE/.gitconfig
