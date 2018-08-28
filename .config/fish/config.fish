@@ -5,4 +5,5 @@ case '*'
 
 end
 
+set -x PIPENV_VENV_IN_PROJECT true
 set -x SHELL fish
