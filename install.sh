@@ -18,11 +18,6 @@ GITCONFIG=https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
 gecho 'Copying .gitconfig'
 wget --no-hsts -O ~/.gitconfig $GITCONFIG
 
-gecho 'Installing fisherman and fish plugins'
-curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
-fish -c 'fisher'
-echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
-
 gecho 'Cloning repository'
 if is_windows; then
     /cygdrive/c/ProgramData/scoop/shims/git clone $REPO $DIR/
@@ -36,6 +31,11 @@ if is_windows; then
     rsync -a --link-dest=$DIR $DIR/.minttyrc ~
     ln $DIR/.gitconfig $USERPROFILE/.gitconfig
 fi
+
+gecho 'Installing fisherman and fish plugins'
+curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
+fish -c 'fisher'
+echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 
 gecho 'Upgrading pip and installing Python packages'
 python3 -m pip install --upgrade pip
