@@ -13,10 +13,9 @@ cd ~ # ensure installation starts in the home directory
 DIR=./project/dotfiles # use . instead of ~ to avoid path issue in Cygwin
 FISHDIR=~/.config/fish
 REPO=https://github.com/klane/dotfiles.git
-GITCONFIG=https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
 
 gecho 'Copying .gitconfig'
-wget --no-hsts -O ~/.gitconfig $GITCONFIG
+curl -O https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
 
 gecho 'Cloning repository'
 if is_windows; then
