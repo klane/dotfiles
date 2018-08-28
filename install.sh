@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
-gecho () {
+function gecho() {
     GREEN="$(tput setaf 2; tput bold)"
     RESET="$(tput sgr0)"
     echo "${GREEN}$1${RESET}"
 }
 
+function is_windows() {
+    [[ ${OSTYPE,,} =~ cygwin ]] || return 1
+}
+
 cd ~ # ensure installation starts in the home directory
 DIR=./project/dotfiles # use . instead of ~ to avoid path issue in Cygwin
 FISHDIR=~/.config/fish
-OSLOW=$(echo $OS | awk '{print tolower($0)}')
 REPO=https://github.com/klane/dotfiles.git
 GITCONFIG=https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
 
@@ -21,7 +24,7 @@ fish -c 'fisher'
 echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 
 gecho 'Cloning repository'
-if [[ $OSLOW == *windows* ]]; then
+if is_windows; then
     /cygdrive/c/ProgramData/scoop/shims/git clone $REPO $DIR/
 else
     git clone $REPO $DIR/
@@ -29,7 +32,7 @@ fi
 
 gecho 'Linking files'
 rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
-if [[ $OSLOW == *windows* ]]; then
+if is_windows; then
     rsync -a --link-dest=$DIR $DIR/.minttyrc ~
     ln $DIR/.gitconfig $USERPROFILE/.gitconfig
 fi
