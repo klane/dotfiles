@@ -27,8 +27,8 @@ fi
 gecho 'Linking files'
 rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
 if is_windows; then
-    rsync -a --link-dest=$DIR $DIR/.minttyrc ~
-    ln $DIR/.gitconfig $USERPROFILE/.gitconfig
+    ln $DIR/.minttyrc ~
+    ln $DIR/.gitconfig $USERPROFILE/.gitconfig # link to Windows home directory
 fi
 
 if is_windows; then
