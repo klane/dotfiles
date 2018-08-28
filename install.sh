@@ -42,7 +42,7 @@ fi
 
 gecho 'Installing fisherman and fish plugins'
 curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
-fish -c 'fisher'
+fish -c "cat $FISHDIR/fishfile | fisher"
 echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 
 gecho 'Upgrading pip and installing Python packages'
