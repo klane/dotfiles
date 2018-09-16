@@ -1,29 +1,31 @@
 # add necessary buckets
 #scoop bucket add extras
 
-# install programs
+# install utilities
 #scoop install 7zip
-#scoop install atom
-#scoop install cmder
 #scoop install coreutils
 #scoop install curl
-#scoop install flux
 #scoop install gawk
 #scoop install git
-#scoop install gitkraken
 #scoop install grep
+#scoop install sed
+#scoop install sudo
+#scoop install wget
+#scoop install which
+
+# install programs
+#scoop install atom
+#scoop install cmder
+#scoop install flux
+#scoop install gitkraken
 #scoop install jetbrains-toolbox
 #scoop install notepadplusplus
 #scoop install r
 #scoop install rstudio
-#scoop install sed
 #scoop install slack
 #scoop install sqlitebrowser
 #scoop install sublime-text
-#scoop install sudo
 #scoop install vscode
-#scoop install wget
-#scoop install which
 
 # set Cygwin variables
 $packages = "curl,dos2unix,fish,fontconfig,git,wget,zsh"
