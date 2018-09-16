@@ -27,15 +27,14 @@
 #scoop install sublime-text
 #scoop install vscode
 
-# set Cygwin variables
-$packages = "curl,dos2unix,fish,fontconfig,git,wget,zsh"
-$url = "http://cygwin.mirror.constant.com"
-$env:CYGWIN_ROOT = "$env:HOMEDRIVE\cygwin"
-$CYGWIN_EXE = "$env:CYGWIN_ROOT\cygwinsetup.exe"
-$CYGWIN_ARGS = "-n -q -R $env:CYGWIN_ROOT -l $env:CYGWIN_ROOT -s $url -P $packages"
+# install MSYS2
+scoop install msys2
+msys2
 
-# install Cygwin
-mkdir $env:CYGWIN_ROOT
-Invoke-WebRequest -Uri "https://cygwin.com/setup-x86_64.exe" -OutFile $CYGWIN_EXE
-Start-Process $CYGWIN_EXE -ArgumentList $CYGWIN_ARGS
-Set-Alias -Name "cygwin" -Value "$env:CYGWIN_ROOT\Cygwin.bat"
+# set MSYS2 environment variable
+$msys2 = scoop info msys2 | sed -n '/Installed/{n;p}' | tr -d "[:space:]"
+[System.Environment]::SetEnvironmentVariable('MSYS2_ROOT', $msys2,
+[System.EnvironmentVariableTarget]::User)
+
+# cleanup Scoop cache
+scoop cache rm *
