@@ -14,14 +14,16 @@ DIR=~/project/dotfiles
 FISHDIR=~/.config/fish
 REPO=https://github.com/klane/dotfiles.git
 
-gecho 'Updating installed packages'
-pacman -Su --noconfirm
+if is_windows; then
+    gecho 'Updating installed packages'
+    pacman -Su --noconfirm
 
-gecho 'Installing development packages'
-pacman -S msys2-devel libcrypt-devel --noconfirm
+    gecho 'Installing development packages'
+    pacman -S msys2-devel libcrypt-devel --noconfirm
 
-gecho 'Installing desired packages'
-pacman -S fish git python3 python3-pip rsync zsh --noconfirm
+    gecho 'Installing desired packages'
+    pacman -S fish git python3 python3-pip rsync zsh --noconfirm
+fi
 
 gecho 'Copying .gitconfig'
 curl -O https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
