@@ -40,7 +40,7 @@ fi
 
 if is_windows; then
     gecho 'Installing direnv'
-    DIRENV_REPO=https://github.com/direnv/direnv/releases/download/v2.17.0
+    DIRENV_REPO=https://github.com/direnv/direnv/releases/download/v2.16.0
     DIRENV=/usr/local/bin/direnv.exe
     curl -Lo $DIRENV --create-dirs "$DIRENV_REPO/direnv.windows-amd64.exe"
     chmod +x $DIRENV
