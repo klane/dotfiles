@@ -50,7 +50,7 @@ gecho 'Installing fisherman'
 curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
 
 gecho 'Installing fish plugins'
-fish -c 'fisher'
+fish -c "cat $FISHDIR/fishfile | fisher"
 echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 
 gecho 'Upgrading pip'
