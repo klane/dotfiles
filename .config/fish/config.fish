@@ -1,6 +1,7 @@
 switch (string lower $OS)
 case '*windows*'
-    alias wgit '/cygdrive/c/ProgramData/scoop/shims/git.exe'
+    set PATH $PATH /c/Users/$USER/scoop/shims
+    set PATH $PATH /c/Users/$USER/scoop/apps/python/current/Scripts
 case '*'
 
 end

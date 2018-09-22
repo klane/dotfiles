@@ -18,11 +18,11 @@ if is_windows; then
     gecho 'Updating installed packages'
     pacman -Su --noconfirm
 
-    gecho 'Installing development packages'
-    pacman -S msys2-devel libcrypt-devel --noconfirm
-
     gecho 'Installing desired packages'
-    pacman -S fish git python3 python3-pip rsync zsh --noconfirm
+    pacman -S fish rsync zsh --noconfirm
+
+    export PATH=$PATH:/c/Users/$USER/scoop/shims
+    export PATH=$PATH:/c/Users/$USER/scoop/apps/python/current/Scripts
 fi
 
 gecho 'Copying .gitconfig'
@@ -54,7 +54,11 @@ fish -c "cat $FISHDIR/fishfile | fisher"
 echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 
 gecho 'Upgrading pip'
-pip install --upgrade pip
+if is_windows; then
+    python -m pip install --upgrade pip
+else
+    pip install --upgrade pip
+fi
 
 gecho 'Installing Python packages'
 pip install -r $DIR/requirements.txt

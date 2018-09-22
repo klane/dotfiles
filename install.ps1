@@ -19,6 +19,7 @@
 
 # install languages
 #scoop install openjdk
+scoop install python
 #scoop install r
 #scoop install scala
 
