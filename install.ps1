@@ -18,7 +18,7 @@
 #scoop install which
 
 # install languages
-#scoop install openjdk
+#scoop install oraclejdk8
 scoop install python
 #scoop install r
 #scoop install scala
