@@ -1,12 +1,16 @@
 # add necessary buckets
 #scoop bucket add extras
+#scoop bucket add java
 
 # install utilities
 #scoop install 7zip
 #scoop install coreutils
 #scoop install curl
+#scoop install diffutils
+#scoop install findutils
 #scoop install gawk
 #scoop install git
+#scoop install gradle
 #scoop install grep
 #scoop install sed
 #scoop install sudo
@@ -20,8 +24,10 @@
 #scoop install gitkraken
 #scoop install jetbrains-toolbox
 #scoop install notepadplusplus
+#scoop install openjdk
 #scoop install r
 #scoop install rstudio
+#scoop install scala
 #scoop install slack
 #scoop install sqlitebrowser
 #scoop install sublime-text
