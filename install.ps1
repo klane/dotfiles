@@ -2,7 +2,7 @@
 #scoop bucket add extras
 #scoop bucket add java
 
-# install utilities
+# install command line tools
 #scoop install 7zip
 #scoop install coreutils
 #scoop install curl
@@ -17,6 +17,11 @@
 #scoop install wget
 #scoop install which
 
+# install languages
+#scoop install openjdk
+#scoop install r
+#scoop install scala
+
 # install programs
 #scoop install atom
 #scoop install cmder
@@ -24,10 +29,7 @@
 #scoop install gitkraken
 #scoop install jetbrains-toolbox
 #scoop install notepadplusplus
-#scoop install openjdk
-#scoop install r
 #scoop install rstudio
-#scoop install scala
 #scoop install slack
 #scoop install sqlitebrowser
 #scoop install sublime-text
