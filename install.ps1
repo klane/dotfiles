@@ -13,6 +13,7 @@
 #scoop install gradle
 #scoop install grep
 #scoop install hub
+#scoop install lazygit
 #scoop install sed
 #scoop install sudo
 #scoop install wget
