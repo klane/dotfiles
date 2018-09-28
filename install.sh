@@ -33,7 +33,6 @@ gecho 'Linking files'
 rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
 if is_windows; then
     ln $DIR/.minttyrc ~
-    ln $DIR/.gitconfig $USERPROFILE/.gitconfig # link to Windows home directory
 fi
 
 gecho 'Generating SSH key'
