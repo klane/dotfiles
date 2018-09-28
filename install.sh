@@ -19,7 +19,7 @@ if is_windows; then
     pacman -Su --noconfirm
 
     gecho 'Installing desired packages'
-    pacman -S fish rsync zsh --noconfirm
+    pacman -S diffutils fish openssh rsync zsh --noconfirm
 
     export PATH=$PATH:/c/Users/$USER/scoop/shims
     export PATH=$PATH:/c/Users/$USER/scoop/apps/python/current/Scripts
