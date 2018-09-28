@@ -36,6 +36,12 @@ if is_windows; then
     ln $DIR/.gitconfig $USERPROFILE/.gitconfig # link to Windows home directory
 fi
 
+gecho 'Generating SSH key'
+mkdir -p ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "lane.kevin.a@gmail.com" -f ~/.ssh/id_rsa -N ''
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+
 if is_windows; then
     gecho 'Installing direnv'
     DIRENV_REPO=https://github.com/direnv/direnv/releases/download/v2.16.0
