@@ -11,8 +11,6 @@ function is_windows() {
 
 cd ~ # ensure installation starts in the home directory
 DIR=~/project/dotfiles
-FISHDIR=~/.config/fish
-REPO=https://github.com/klane/dotfiles.git
 
 if is_windows; then
     gecho 'Updating installed packages'
@@ -29,7 +27,7 @@ gecho 'Copying .gitconfig'
 curl -O https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
 
 gecho 'Cloning repository'
-git clone $REPO $DIR/
+git clone https://github.com/klane/dotfiles.git $DIR/
 
 gecho 'Linking files'
 rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
@@ -47,6 +45,7 @@ if is_windows; then
 fi
 
 gecho 'Installing fisherman'
+FISHDIR=~/.config/fish
 curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
 
 gecho 'Installing fish plugins'
