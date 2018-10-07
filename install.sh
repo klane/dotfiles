@@ -37,7 +37,7 @@ fi
 
 gecho 'Generating SSH key'
 mkdir -p ~/.ssh
-ssh-keygen -t rsa -b 4096 -C "lane.kevin.a@gmail.com" -f ~/.ssh/id_rsa -N ''
+ssh-keygen -t rsa -b 4096 -C 'lane.kevin.a@gmail.com' -f ~/.ssh/github.key
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 
