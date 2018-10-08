@@ -39,7 +39,7 @@ gecho 'Generating SSH key'
 mkdir -p ~/.ssh
 ssh-keygen -t rsa -b 4096 -C 'lane.kevin.a@gmail.com' -f ~/.ssh/github.key
 eval $(ssh-agent -s)
-ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/github.key
 
 if is_windows; then
     gecho 'Installing direnv'
