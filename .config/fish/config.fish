@@ -8,7 +8,8 @@ case '*'
 end
 
 function ignorehistory --on-event fish_prompt
-    echo all | history --delete df du fg bg ls la ll which exit > /dev/null
+    set tmp df du fg bg ls la ll history which exit
+    echo all | history --delete -p $tmp > /dev/null
 end
 
 alias df 'df -h'
