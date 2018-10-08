@@ -18,7 +18,7 @@ if is_windows; then
     pacman -Su --noconfirm
 
     gecho 'Installing desired packages'
-    pacman -S diffutils fish openssh rsync zsh --noconfirm
+    pacman -S diffutils fish openssh rsync tar zsh --noconfirm
 
     export PATH=$PATH:/c/Users/$USER/scoop/shims
     export PATH=$PATH:/c/Users/$USER/scoop/apps/python/current/Scripts
@@ -55,7 +55,7 @@ FISHDIR=~/.config/fish
 curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
 
 gecho 'Installing fish plugins'
-fish -c "cat $FISHDIR/fishfile | fisher"
+fish -c 'fisher'
 echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 
 gecho 'Upgrading pip'
