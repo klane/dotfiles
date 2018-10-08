@@ -11,6 +11,7 @@ function is_windows() {
 
 cd ~ # ensure installation starts in the home directory
 DIR=~/project/dotfiles
+REPO=klane/dotfiles.git
 
 if is_windows; then
     gecho 'Updating installed packages'
@@ -27,7 +28,7 @@ gecho 'Copying .gitconfig'
 curl -O https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
 
 gecho 'Cloning repository'
-git clone https://github.com/klane/dotfiles.git $DIR/
+git clone https://github.com/$REPO $DIR/
 
 gecho 'Linking files'
 rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
@@ -40,6 +41,7 @@ mkdir -p ~/.ssh
 ssh-keygen -t rsa -b 4096 -C 'lane.kevin.a@gmail.com' -f ~/.ssh/github.key
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/github.key
+git --git-dir $DIR/.git remote set-url origin git@github.com:$REPO
 
 if is_windows; then
     gecho 'Installing direnv'
