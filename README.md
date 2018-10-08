@@ -25,9 +25,9 @@ curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash
 
 ## SSH
 
-Create a new SSH key on GitHub with the contents of ~/.ssh/id_rsa.pub.
+Create a new SSH key on GitHub with the contents of ~/.ssh/github.key.pub.
 Execute the following command to authenticate the SSH key.
 
 ```bash
-ssh -T -o StrictHostKeyChecking=no git@github.com
+ssh -T git@github.com
 ```
