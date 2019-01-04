@@ -34,6 +34,8 @@ gecho 'Linking files'
 rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
 if is_windows; then
     ln $DIR/.minttyrc ~
+else
+    ln $DIR/Brewfile ~
 fi
 
 gecho 'Generating SSH key'
