@@ -67,6 +67,9 @@ fi
 
 gecho 'Installing Python packages'
 pip install -r $DIR/requirements.txt
+curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+poetry completions fish > ~/.config/fish/completions/poetry.fish
+poetry config settings.virtualenvs.in-project true
 
 gecho 'Installing Powerline fonts'
 git clone https://github.com/powerline/fonts.git --depth=1
