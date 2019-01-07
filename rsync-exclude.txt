@@ -1,6 +1,7 @@
+*.ps1
+*.sh
 *.txt
 .git/
 .minttyrc
-install.*
 Brewfile
 README.md

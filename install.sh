@@ -1,17 +1,6 @@
 #!/usr/bin/env bash
-function gecho() {
-    GREEN="$(tput setaf 2; tput bold)"
-    RESET="$(tput sgr0)"
-    echo "${GREEN}$1${RESET}"
-}
-
-function is_windows() {
-    [[ ${OSTYPE,,} == msys ]] || return 1
-}
-
+source support.sh # load support functions & variables
 cd ~ # ensure installation starts in the home directory
-DIR=~/project/dotfiles
-REPO=klane/dotfiles.git
 
 if is_windows; then
     gecho 'Updating installed packages'
@@ -31,12 +20,7 @@ gecho 'Cloning repository'
 git clone https://github.com/$REPO $DIR/
 
 gecho 'Linking files'
-rsync -a --exclude-from="$DIR/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
-if is_windows; then
-    ln $DIR/.minttyrc ~
-else
-    ln $DIR/Brewfile ~
-fi
+source $DIR/bootstrap.sh
 
 gecho 'Generating SSH key'
 ssh-keygen -t rsa -b 4096 -C 'lane.kevin.a@gmail.com' -f ~/.ssh/github.key
