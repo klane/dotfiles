@@ -11,8 +11,8 @@ curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash
 ### PowerShell
 
 ```powershell
-$ScriptFromGithHub = Invoke-WebRequest https://raw.githubusercontent.com/klane/dotfiles/master/install.ps1
-Invoke-Expression $($ScriptFromGithHub.Content) # MSYS2 Bash shell will open
+$Script = Invoke-WebRequest https://raw.githubusercontent.com/klane/dotfiles/master/install.ps1
+Invoke-Expression $($Script.Content) # MSYS2 Bash shell will open
 ```
 
 ### Bash
