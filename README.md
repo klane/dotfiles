@@ -3,7 +3,7 @@
 ## Mac
 
 ```bash
-curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash
+curl https://raw.githubusercontent.com/klane/dotfiles/master/scripts/install.sh | bash
 ```
 
 ## Windows
@@ -11,7 +11,7 @@ curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash
 ### PowerShell
 
 ```powershell
-$Script = Invoke-WebRequest https://raw.githubusercontent.com/klane/dotfiles/master/install.ps1
+$Script = Invoke-WebRequest https://raw.githubusercontent.com/klane/dotfiles/master/scripts/install.ps1
 Invoke-Expression $($Script.Content) # MSYS2 Bash shell will open
 ```
 
@@ -20,7 +20,7 @@ Invoke-Expression $($Script.Content) # MSYS2 Bash shell will open
 ```bash
 pacman -Syu # close MSYS2
 # start MSYS2 with msys2.exe in installation directory, not 'current' junction
-curl https://raw.githubusercontent.com/klane/dotfiles/master/install.sh | bash
+curl https://raw.githubusercontent.com/klane/dotfiles/master/scripts/install.sh | bash
 ```
 
 ## SSH

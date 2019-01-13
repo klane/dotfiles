@@ -20,7 +20,7 @@ gecho 'Cloning repository'
 git clone https://github.com/$REPO $DIR/
 
 gecho 'Linking files'
-source $DIR/bootstrap.sh
+source $DIR/scripts/bootstrap.sh
 
 gecho 'Generating SSH key'
 ssh-keygen -t rsa -b 4096 -C 'lane.kevin.a@gmail.com' -f ~/.ssh/github.key
@@ -52,7 +52,7 @@ else
 fi
 
 gecho 'Installing Python packages'
-pip install -r $DIR/requirements.txt
+pip install -r $DIR/support/requirements.txt
 curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 poetry completions fish > ~/.config/fish/completions/poetry.fish
 poetry config settings.virtualenvs.in-project true
