@@ -1,7 +1,6 @@
-*.ps1
-*.sh
-*.txt
 .git/
+scripts/
+support/
 .minttyrc
 Brewfile
 README.md
