@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-source support.sh # load support functions & variables
 cd ~ # ensure installation starts in the home directory
+source support.sh # load support functions & variables
 
 if is_windows; then
     gecho 'Updating installed packages'
