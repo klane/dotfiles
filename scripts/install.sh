@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # get repo location
 DIR="${BASH_SOURCE%/*/*}"
-if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
+if [[ ! -d "$DIR" ]]; then DIR="${PWD%/*}"; fi
 
 . $DIR/scripts/support.sh # load support functions & variables
 cd ~ # ensure installation starts in the home directory
