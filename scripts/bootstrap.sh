@@ -11,4 +11,8 @@ else
 	exclude=.minttyrc
 fi
 
-rsync -a --exclude-from="$DIR/support/rsync-exclude.txt" --exclude=$exclude --link-dest=$DIR $DIR/ ~
+rsync -a \
+	  --exclude=$exclude \
+	  --exclude-from="$DIR/support/rsync-exclude.txt" \
+	  --link-dest=$DIR \
+	  $DIR/ ~
