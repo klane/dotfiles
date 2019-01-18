@@ -4,10 +4,11 @@ DIR="${BASH_SOURCE%/*/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 . $DIR/scripts/support.sh # load support functions & variables
-rsync -a --exclude-from="$DIR/support/rsync-exclude.txt" --link-dest=$DIR $DIR/ ~
 
 if is_windows; then
-	ln $DIR/.minttyrc ~
+	exclude=Brewfile
 else
-	ln $DIR/Brewfile ~
+	exclude=.minttyrc
 fi
+
+rsync -a --exclude-from="$DIR/support/rsync-exclude.txt" --exclude=$exclude --link-dest=$DIR $DIR/ ~
