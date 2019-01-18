@@ -17,12 +17,6 @@ if is_windows; then
     export PATH=$PATH:/c/Users/$USER/scoop/apps/python/current/Scripts
 fi
 
-gecho 'Copying .gitconfig'
-curl -O https://raw.githubusercontent.com/klane/dotfiles/master/.gitconfig
-
-gecho 'Cloning repository'
-git clone https://github.com/$REPO $DIR/
-
 gecho 'Linking files'
 source $DIR/scripts/bootstrap.sh
 

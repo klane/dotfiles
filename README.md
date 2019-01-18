@@ -1,9 +1,12 @@
 # Installation
 
-## Mac
+## macOS
 
 ```bash
-curl https://raw.githubusercontent.com/klane/dotfiles/master/scripts/install.sh | bash
+# set DIR to desired repo location
+git clone https://github.com/klane/dotfiles $DIR
+cd $DIR/scripts
+./install.sh
 ```
 
 ## Windows
@@ -20,7 +23,7 @@ Invoke-Expression $($Script.Content) # MSYS2 Bash shell will open
 ```bash
 pacman -Syu # close MSYS2
 # start MSYS2 with msys2.exe in installation directory, not 'current' junction
-curl https://raw.githubusercontent.com/klane/dotfiles/master/scripts/install.sh | bash
+# follow macOS instructions above
 ```
 
 ## SSH
