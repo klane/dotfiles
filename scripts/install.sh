@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+DIR="${BASH_SOURCE%/*/*}" # get repo location
+if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
+
+. $DIR/scripts/support.sh # load support functions & variables
 cd ~ # ensure installation starts in the home directory
-source support.sh # load support functions & variables
 
 if is_windows; then
     gecho 'Updating installed packages'

@@ -9,5 +9,4 @@ function is_windows() {
     [[ $OSTYPE == msys ]] || return 1
 }
 
-DIR=~/project/dotfiles
 REPO=klane/dotfiles.git
