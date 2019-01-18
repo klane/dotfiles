@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-DIR="${BASH_SOURCE%/*/*}" # get repo location
+# get repo location
+DIR="${BASH_SOURCE%/*/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 . $DIR/scripts/support.sh # load support functions & variables
