@@ -27,7 +27,7 @@ gecho 'Linking files'
 source $DIR/scripts/bootstrap.sh
 
 gecho 'Generating SSH key'
-ssh-keygen -t rsa -b 4096 -C 'lane.kevin.a@gmail.com' -f ~/.ssh/github.key
+ssh-keygen -t rsa -b 4096 -C $EMAIL -f ~/.ssh/github.key
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/github.key
 git --git-dir $DIR/.git remote set-url origin git@github.com:$REPO

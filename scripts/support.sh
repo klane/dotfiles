@@ -9,4 +9,5 @@ function is_windows() {
     [[ $OSTYPE == msys ]] || return 1
 }
 
+EMAIL=lane.kevin.a@gmail.com
 REPO=klane/dotfiles.git
