@@ -1,6 +1,7 @@
 .git/
 scripts/
 support/
+.DS_Store
 .minttyrc
 Brewfile
 README.md
