@@ -9,5 +9,10 @@ function is_windows() {
     [[ $OSTYPE == msys ]] || return 1
 }
 
+function prompt() {
+	read -r -p "$1 [y|N] " response
+	[[ $response =~ (yes|y|Y) ]] || return 1
+}
+
 EMAIL=lane.kevin.a@gmail.com
 REPO=klane/dotfiles.git
