@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+function exists() {
+	command -v "$1" >/dev/null 2>&1
+}
+
 function gecho() {
     GREEN="$(tput setaf 2; tput bold)"
     RESET="$(tput sgr0)"

@@ -15,6 +15,11 @@ if is_windows; then
 
     export PATH=$PATH:/c/Users/$USER/scoop/shims
     export PATH=$PATH:/c/Users/$USER/scoop/apps/python/current/Scripts
+else
+    if ! exists brew; then
+        gecho 'Installing Homebrew'
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    fi
 fi
 
 gecho 'Linking files'

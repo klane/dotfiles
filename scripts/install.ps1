@@ -1,3 +1,6 @@
+# install scoop
+iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+
 # add necessary buckets
 #scoop bucket add extras
 #scoop bucket add java
