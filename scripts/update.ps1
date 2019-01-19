@@ -1,9 +1,6 @@
 # update scoop
 scoop update
 
-# check for outdated programs
-scoop status
-
 # update programs
 scoop update *
 
@@ -15,3 +12,6 @@ scoop cache rm *
 
 # check for potential problems
 scoop checkup
+
+# print scoop status check
+scoop status
