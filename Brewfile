@@ -1,11 +1,13 @@
-# Packages
+# Utilities
 brew 'fish'
 brew 'git'
 brew 'hub'
 brew 'openssh'
+brew 'zsh'
+
+# Languages
 brew 'python2'
 brew 'python3'
-brew 'zsh'
 
 # Casks
 cask 'dashlane'
