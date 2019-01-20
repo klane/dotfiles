@@ -6,13 +6,13 @@ if [[ ! -d "$DIR" ]]; then DIR="${PWD%/*}"; fi
 . $DIR/scripts/support.sh # load support functions & variables
 
 if is_windows; then
-	exclude=Brewfile
+    exclude=Brewfile
 else
-	exclude=.minttyrc
+    exclude=.minttyrc
 fi
 
 rsync -a \
-	  --exclude=$exclude \
-	  --exclude-from="$DIR/support/rsync-exclude.txt" \
-	  --link-dest=$DIR \
-	  $DIR/ ~
+      --exclude=$exclude \
+      --exclude-from="$DIR/support/rsync-exclude.txt" \
+      --link-dest=$DIR \
+      $DIR/ ~

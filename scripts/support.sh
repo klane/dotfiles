@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 function exists() {
-	command -v "$1" >/dev/null 2>&1
+    command -v "$1" >/dev/null 2>&1
 }
 
 function gecho() {
@@ -14,8 +14,8 @@ function is_windows() {
 }
 
 function prompt() {
-	read -r -p "$1 [y|N] " response
-	[[ $response =~ (yes|y|Y) ]] || return 1
+    read -r -p "$1 [y|N] " response
+    [[ $response =~ (yes|y|Y) ]] || return 1
 }
 
 EMAIL=lane.kevin.a@gmail.com
