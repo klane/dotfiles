@@ -38,7 +38,7 @@ if prompt 'Generate SSH key?'; then
     git --git-dir $DIR/.git remote set-url origin git@github.com:$REPO
 fi
 
-if is_windows; then
+if is_windows && prompt 'Install direnv?'; then
     gecho 'Installing direnv'
     DIRENV_REPO=https://github.com/direnv/direnv/releases/download/v2.16.0
     DIRENV=/usr/local/bin/direnv.exe
@@ -65,11 +65,9 @@ if prompt 'Upgrade pip?'; then
     fi
 fi
 
-if is_windows; then
-    if prompt 'Install Python packages?'; then
-        gecho 'Installing Python packages'
-        pip install -r $DIR/support/requirements.txt
-    fi
+if is_windows && prompt 'Install Python packages?'; then
+    gecho 'Installing Python packages'
+    pip install -r $DIR/support/requirements.txt
 fi
 
 if prompt 'Install poetry?'; then
