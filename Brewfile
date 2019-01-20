@@ -4,8 +4,6 @@ tap 'homebrew/cask-versions'
 
 # Utilities
 brew 'fish'
-brew 'git'
-brew 'hub'
 brew 'openssh'
 brew 'zsh'
 
@@ -15,7 +13,9 @@ brew 'python2'
 brew 'python3'
 
 # Programming Tools
+brew 'git'
 brew 'gradle'
+brew 'hub'
 
 # Casks
 cask 'dashlane'
