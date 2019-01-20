@@ -15,7 +15,12 @@ if is_windows; then
 
     export PATH=$PATH:/c/Users/$USER/scoop/shims
     export PATH=$PATH:/c/Users/$USER/scoop/apps/python/current/Scripts
-else
+fi
+
+gecho 'Linking files'
+source $DIR/scripts/bootstrap.sh
+
+if ! is_windows; then
     if ! exists brew; then
         gecho 'Installing Homebrew'
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -24,9 +29,6 @@ else
     gecho 'Installing desired packages'
     brew bundle
 fi
-
-gecho 'Linking files'
-source $DIR/scripts/bootstrap.sh
 
 if prompt 'Generate SSH key?'; then
     gecho 'Generating SSH key'
