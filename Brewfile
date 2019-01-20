@@ -1,3 +1,6 @@
+# Taps
+tap 'homebrew/cask'
+
 # Utilities
 brew 'fish'
 brew 'git'
