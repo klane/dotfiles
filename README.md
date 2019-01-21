@@ -6,7 +6,7 @@
 # set DIR to desired repo location
 git clone https://github.com/klane/dotfiles $DIR
 cd $DIR/scripts
-./install.sh
+source install.sh
 ```
 
 ## Windows
