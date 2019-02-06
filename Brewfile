@@ -11,6 +11,7 @@ brew 'zsh'
 cask 'java8'
 brew 'python2'
 brew 'python3'
+brew 'r'
 
 # Programming Tools
 brew 'git'
@@ -26,4 +27,5 @@ cask 'hyper'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'keepingyouawake'
+cask 'rstudio'
 cask 'sublime-text'
