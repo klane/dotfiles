@@ -17,4 +17,3 @@ brew cask upgrade
 
 gecho 'Cleanup brew cached downloads'
 brew cleanup
-brew prune
