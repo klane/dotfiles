@@ -9,8 +9,7 @@ brew 'zsh'
 
 # Programming Languages
 cask 'java8'
-brew 'python2'
-brew 'python3'
+brew 'python'
 brew 'r'
 
 # Programming Tools
