@@ -8,6 +8,9 @@ if [[ ! -d "$DIR" ]]; then DIR="${PWD%/*}"; fi
 gecho 'Update Homebrew'
 brew update
 
+gecho 'Install missing packages'
+brew bundle
+
 gecho 'Upgrade outdated brews and casks'
 brew upgrade
 brew cask upgrade
