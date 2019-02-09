@@ -54,7 +54,6 @@ if prompt 'Install fisherman and fish plugins?'; then
 
     gecho 'Installing fish plugins'
     fish -c 'fisher'
-    echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 fi
 
 if prompt 'Upgrade pip?'; then
@@ -69,6 +68,10 @@ fi
 if is_windows && prompt 'Install Python packages?'; then
     gecho 'Installing Python packages'
     pip install -r $DIR/support/requirements.txt
+fi
+
+if exists pipenv; then
+    echo 'eval (pipenv --completion)' > $FISHDIR/completions/pipenv.fish
 fi
 
 if prompt 'Install poetry?'; then
