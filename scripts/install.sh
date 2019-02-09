@@ -6,6 +6,8 @@ if [[ ! -d "$DIR" ]]; then DIR="${PWD%/*}"; fi
 . $DIR/scripts/support.sh # load support functions & variables
 cd ~ # ensure installation starts in the home directory
 
+FISHDIR=~/.config/fish
+
 if is_windows; then
     gecho 'Updating installed packages'
     pacman -Su --noconfirm
@@ -48,7 +50,6 @@ fi
 
 if prompt 'Install fisherman and fish plugins?'; then
     gecho 'Installing fisherman'
-    FISHDIR=~/.config/fish
     curl -Lo $FISHDIR/functions/fisher.fish --create-dirs https://git.io/fisher
 
     gecho 'Installing fish plugins'
@@ -73,7 +74,7 @@ fi
 if prompt 'Install poetry?'; then
     gecho 'Installing poetry'
     curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-    poetry completions fish > ~/.config/fish/completions/poetry.fish
+    poetry completions fish > $FISHDIR/completions/poetry.fish
     poetry completions zsh > ~/.zfunc/_poetry
     poetry config settings.virtualenvs.in-project true
 fi
