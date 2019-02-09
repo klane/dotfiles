@@ -79,7 +79,7 @@ if prompt 'Install poetry?'; then
     poetry config settings.virtualenvs.in-project true
 fi
 
-if prompt 'Install Powerline fonts?'; then
+if is_windows && prompt 'Install Powerline fonts?'; then
     gecho 'Installing Powerline fonts'
     git clone https://github.com/powerline/fonts.git --depth=1
     cd fonts
