@@ -74,6 +74,7 @@ if prompt 'Install poetry?'; then
     gecho 'Installing poetry'
     curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
     poetry completions fish > ~/.config/fish/completions/poetry.fish
+    poetry completions zsh > ~/.zfunc/_poetry
     poetry config settings.virtualenvs.in-project true
 fi
 
