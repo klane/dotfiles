@@ -7,6 +7,7 @@ if [[ ! -d "$DIR" ]]; then DIR="${PWD%/*}"; fi
 cd ~ # ensure installation starts in the home directory
 
 FISHDIR=~/.config/fish
+mkdir -p $FISHDIR/completions
 
 if is_windows; then
     gecho 'Updating installed packages'
@@ -77,9 +78,9 @@ fi
 if prompt 'Install poetry?'; then
     gecho 'Installing poetry'
     curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-    poetry completions fish > $FISHDIR/completions/poetry.fish
-    poetry completions zsh > ~/.zfunc/_poetry
     poetry config settings.virtualenvs.in-project true
+    poetry completions fish > $FISHDIR/completions/poetry.fish
+    mkdir -p ~/.zfunc && poetry completions zsh > ~/.zfunc/_poetry
 fi
 
 if is_windows && prompt 'Install Powerline fonts?'; then
