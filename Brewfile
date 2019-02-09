@@ -16,6 +16,7 @@ brew 'r'
 brew 'git'
 brew 'gradle'
 brew 'hub'
+brew 'pipenv'
 
 # Casks
 cask 'dashlane'
