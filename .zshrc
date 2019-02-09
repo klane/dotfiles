@@ -28,3 +28,7 @@ antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
+
+# Configure Pipenv
+eval "$(pipenv --completion)"
+export PIPENV_VENV_IN_PROJECT=1
