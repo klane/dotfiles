@@ -30,17 +30,6 @@ case uname in
         ;;
 esac
 
-source ~/antigen.zsh
-
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
-# Load the theme.
-antigen theme agnoster
-
-# Tell Antigen that you're done.
-antigen apply
-
 # Configure Pipenv
 eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1
