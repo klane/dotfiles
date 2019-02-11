@@ -44,3 +44,5 @@ antigen apply
 # Configure Pipenv
 eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1
+
+alias git=hub
