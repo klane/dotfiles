@@ -2,7 +2,7 @@
 
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle ':completion:*' max-errors 2
-zstyle :compinstall filename '/home/Kev/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 fpath+=~/.zfunc
 
@@ -10,16 +10,26 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
+HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory autocd
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-#export PATH=/cygdrive/c/Users/$USER/scoop/shims:$PATH
-export PATH=/cygdrive/c/Users/$USER/scoop/apps/python/current:$PATH
-export PATH=/cygdrive/c/Users/$USER/scoop/apps/python/current/Scripts:$PATH
+case uname in
+    Darwin)
+        export PATH="/usr/local/sbin:$PATH"
+        export PATH=/usr/local/opt/python/libexec/bin:$PATH
+        export PATH="$HOME/.poetry/bin:$PATH"
+        ;;
+    *)
+        export PATH=/cygdrive/c/Users/$USER/scoop/shims:$PATH
+        export PATH=/cygdrive/c/Users/$USER/scoop/apps/python/current:$PATH
+        export PATH=/cygdrive/c/Users/$USER/scoop/apps/python/current/Scripts:$PATH
+        ;;
+esac
+
 source ~/antigen.zsh
 
 # Load the oh-my-zsh's library.
