@@ -19,7 +19,7 @@ bindkey -e
 
 case `uname` in
     Darwin)
-        export PATH="/usr/local/sbin:$PATH"
+        export PATH=$PATH:/usr/local/sbin
         export PATH=/usr/local/bin:$PATH
         export PATH=/usr/local/opt/python/libexec/bin:$PATH
         export PATH=/usr/local/opt/ruby/bin:$PATH

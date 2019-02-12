@@ -5,7 +5,7 @@ end
 
 switch (uname)
     case Darwin
-        set PATH /usr/local/sbin $PATH
+        set PATH $PATH /usr/local/sbin
         set PATH /usr/local/opt/python/libexec/bin $PATH
         set PATH /usr/local/opt/ruby/bin $PATH
         set PATH $HOME/.poetry/bin $PATH
