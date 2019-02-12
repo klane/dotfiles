@@ -1,5 +1,6 @@
 # Taps
 tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'getantibody/tap'
 
@@ -25,6 +26,7 @@ brew 'pipenv'
 cask 'dashlane'
 cask 'db-browser-for-sqlite'
 cask 'flux'
+cask 'font-meslo-nerd-font'
 cask 'google-chrome'
 cask 'hyper'
 cask 'iterm2'
