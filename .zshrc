@@ -21,6 +21,7 @@ case uname in
     Darwin)
         export PATH="/usr/local/sbin:$PATH"
         export PATH=/usr/local/opt/python/libexec/bin:$PATH
+        export PATH=/usr/local/opt/ruby/bin:$PATH
         export PATH="$HOME/.poetry/bin:$PATH"
         ;;
     *)

@@ -12,6 +12,7 @@ brew 'zsh'
 cask 'java8'
 brew 'python'
 brew 'r'
+brew 'ruby'
 
 # Programming Tools
 brew 'antibody'
