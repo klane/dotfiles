@@ -35,3 +35,6 @@ eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1
 
 alias git=hub
+
+# Configure Antibody
+source <(antibody init)

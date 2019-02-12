@@ -1,6 +1,7 @@
 # Taps
 tap 'homebrew/cask'
 tap 'homebrew/cask-versions'
+tap 'getantibody/tap'
 
 # Utilities
 brew 'fish'
@@ -13,6 +14,7 @@ brew 'python'
 brew 'r'
 
 # Programming Tools
+brew 'antibody'
 brew 'git'
 brew 'gradle'
 brew 'hub'
