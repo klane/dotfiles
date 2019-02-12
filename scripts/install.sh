@@ -33,6 +33,8 @@ if ! is_windows; then
     brew bundle
 fi
 
+gem install colorls
+
 if prompt 'Generate SSH key?'; then
     gecho 'Generating SSH key'
     ssh-keygen -t rsa -b 4096 -C $EMAIL -f ~/.ssh/github.key
