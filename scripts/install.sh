@@ -31,6 +31,9 @@ if ! is_windows; then
 
     gecho 'Installing desired packages'
     brew bundle
+    PYENV_DIR=~/.pyenv/versions
+    ln -s $(brew --cellar python)/* $PYENV_DIR/homebrew
+    ln -s $PYENV_DIR/homebrew/libexec/bin/* $PYENV_DIR/homebrew/bin
 fi
 
 gem install colorls
