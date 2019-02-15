@@ -38,6 +38,7 @@ eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1
 
 alias git=hub
+alias lc='colorls -lA --sd'
 
 # Configure Antibody
 source <(antibody init)
