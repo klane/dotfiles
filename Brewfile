@@ -21,6 +21,7 @@ brew 'git'
 brew 'gradle'
 brew 'hub'
 brew 'pipenv'
+brew 'pyenv'
 
 # Casks
 cask 'dashlane'
