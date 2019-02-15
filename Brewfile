@@ -5,6 +5,7 @@ tap 'homebrew/cask-versions'
 tap 'getantibody/tap'
 
 # Utilities
+brew 'direnv'
 brew 'fish'
 brew 'openssh'
 brew 'zsh'

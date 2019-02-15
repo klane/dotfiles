@@ -1,4 +1,5 @@
 matchai/spacefish
 rominf/omf-plugin-pyenv
+oh-my-fish/plugin-direnv
 kennethreitz/fish-pipenv
 danhper/fish-ssh-agent
