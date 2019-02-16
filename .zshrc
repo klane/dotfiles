@@ -39,6 +39,9 @@ export PIPENV_VENV_IN_PROJECT=1
 alias git=hub
 alias lc='colorls -lA --sd'
 
+# Travis CI completion
+[ -f /Users/klane/.travis/travis.sh ] && source /Users/klane/.travis/travis.sh
+
 # Configure Antibody
 source <(antibody init)
 antibody bundle < ~/.zsh_plugins.txt

@@ -23,6 +23,7 @@ brew 'gradle'
 brew 'hub'
 brew 'pipenv'
 brew 'pyenv'
+brew 'travis'
 
 # Casks
 cask 'dashlane'
