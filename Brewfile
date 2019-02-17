@@ -9,6 +9,7 @@ brew 'direnv'
 brew 'fish'
 brew 'gnupg'
 brew 'openssh'
+brew 'pinentry-mac'
 brew 'zsh'
 
 # Programming Languages

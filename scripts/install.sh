@@ -48,6 +48,7 @@ fi
 
 if prompt 'Generate GPG key?'; then
     gpg --full-generate-key
+    echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 fi
 
 if is_windows && prompt 'Install direnv?'; then
