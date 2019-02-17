@@ -7,6 +7,7 @@ tap 'getantibody/tap'
 # Utilities
 brew 'direnv'
 brew 'fish'
+brew 'gnupg'
 brew 'openssh'
 brew 'zsh'
 
