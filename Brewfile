@@ -23,9 +23,14 @@ brew 'antibody'
 brew 'git'
 brew 'gradle'
 brew 'hub'
+brew 'travis'
+
+# Python Tools
+brew 'black'
+brew 'flake8'
+brew 'mypy'
 brew 'pipenv'
 brew 'pyenv'
-brew 'travis'
 
 # Casks
 cask 'dashlane'
