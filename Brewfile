@@ -33,6 +33,7 @@ brew 'pipenv'
 brew 'pyenv'
 
 # Casks
+cask 'cakebrew'
 cask 'dashlane'
 cask 'db-browser-for-sqlite'
 cask 'flux'
