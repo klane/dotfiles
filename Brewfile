@@ -32,6 +32,9 @@ brew 'mypy'
 brew 'pipenv'
 brew 'pyenv'
 
+# Support Casks
+cask 'xquartz'
+
 # Casks
 cask 'cakebrew'
 cask 'dashlane'
@@ -42,6 +45,7 @@ cask 'gimp'
 cask 'gitkraken'
 cask 'google-chrome'
 cask 'hyper'
+cask 'inkscape'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'keepingyouawake'
