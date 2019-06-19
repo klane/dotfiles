@@ -30,6 +30,7 @@ brew 'travis'
 # Python Tools
 brew 'black'
 brew 'flake8'
+brew 'mkdocs'
 brew 'mypy'
 brew 'pipenv'
 brew 'pyenv'
