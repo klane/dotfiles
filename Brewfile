@@ -24,6 +24,7 @@ brew 'antibody'
 brew 'git'
 brew 'gradle'
 brew 'hub'
+brew 'legit'
 brew 'travis'
 
 # Python Tools
