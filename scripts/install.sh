@@ -36,6 +36,7 @@ if ! is_windows; then
     ln -s $PYENV_DIR/homebrew/libexec/bin/* $PYENV_DIR/homebrew/bin
 fi
 
+git clone momo-lab/xxenv-latest "$(pyenv root)"/plugins/xxenv-latest
 gem install colorls
 
 if prompt 'Generate SSH key?'; then
