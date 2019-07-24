@@ -3,4 +3,5 @@
   email = lane.kevin.a@gmail.com
 [core]
   autocrlf = false
+  editor = 'subl' --wait
   eol = lf
