@@ -1,0 +1,4 @@
+- link:
+    ~/.config/fish/config.fish: .config/fish/config.fish
+    ~/.config/fish/fishfile: .config/fish/fishfile
+    ~/.config/fish/conf.d/addpath.fish: .config/fish/conf.d/addpath.fish
