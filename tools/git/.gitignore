@@ -6,3 +6,6 @@
 
 # direnv
 .envrc
+
+# Python
+*.pyc
