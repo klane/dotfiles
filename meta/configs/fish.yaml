@@ -2,3 +2,7 @@
     ~/.config/fish/config.fish: shells/fish/config.fish
     ~/.config/fish/fishfile: shells/fish/fishfile
     ~/.config/fish/conf.d/addpath.fish: shells/fish/addpath.fish
+
+- shell:
+  - [fish -c 'fisher self-update', Updating Fisher]
+  - [fish -c fisher, Updating fish plugins]

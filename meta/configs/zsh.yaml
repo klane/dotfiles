@@ -1,3 +1,6 @@
 - link:
     ~/.zshrc: shells/zsh/zshrc
     ~/.zsh_plugins.txt: shells/zsh/plugins.txt
+
+- shell:
+  - [antibody update, Updating Zsh plugins]
