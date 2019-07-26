@@ -3,3 +3,6 @@
 
 # IntelliJ IDEA & PyCharm
 .idea/
+
+# direnv
+.envrc
