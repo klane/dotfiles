@@ -5,3 +5,4 @@
   autocrlf = false
   editor = 'subl' --wait
   eol = lf
+  excludesfile = ~/.gitignore
