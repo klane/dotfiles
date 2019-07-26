@@ -6,3 +6,4 @@
   editor = 'subl' --wait
   eol = lf
   excludesfile = ~/.gitignore
+  filemode = false
