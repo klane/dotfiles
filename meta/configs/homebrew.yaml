@@ -1,2 +1,5 @@
 - link:
     ~/Brewfile: tools/homebrew/Brewfile
+
+- brewfile:
+  - ~/Brewfile
