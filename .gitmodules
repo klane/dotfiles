@@ -2,3 +2,6 @@
     path = meta/dotbot
     url = git://github.com/anishathalye/dotbot.git
     ignore = dirty
+[submodule "meta/dotbot-brew"]
+	path = meta/dotbot-brew
+	url = git://github.com/d12frosted/dotbot-brew.git
