@@ -1,13 +1,11 @@
 - link:
     ~/Brewfile: tools/homebrew/Brewfile
 
-- shell:
-  - [brew update, Updating Homebrew]
-  - [brew upgrade, Upgrading outdated brews]
-  - [brew cask upgrade, Upgrading outdated casks]
-
 - brewfile:
   - ~/Brewfile
 
 - shell:
+  - [brew update, Updating Homebrew]
+  - [brew upgrade, Upgrading outdated brews]
+  - [brew cask upgrade, Upgrading outdated casks]
   - [brew cleanup, Cleanup brew cached downloads]
