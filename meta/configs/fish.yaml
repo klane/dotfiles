@@ -4,5 +4,12 @@
     ~/.config/fish/conf.d/addpath.fish: shells/fish/addpath.fish
 
 - shell:
-  - [fish -c 'fisher self-update', Updating Fisher]
+  - command: |
+      fish -c \
+      'if not functions -q fisher
+          curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+      else
+          fisher self-update
+      end'
+    description: Installing/Updating Fisher
   - [fish -c fisher, Updating fish plugins]
