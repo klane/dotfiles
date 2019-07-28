@@ -20,6 +20,7 @@ brew 'r'
 
 # Programming Tools
 brew 'antibody'
+brew 'brew-gem'
 brew 'git'
 brew 'gradle'
 brew 'hub'

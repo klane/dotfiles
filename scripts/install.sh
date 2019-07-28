@@ -37,7 +37,6 @@ if ! is_windows; then
 fi
 
 git clone momo-lab/xxenv-latest "$(pyenv root)"/plugins/xxenv-latest
-gem install colorls
 
 if prompt 'Generate SSH key?'; then
     gecho 'Generating SSH key'
