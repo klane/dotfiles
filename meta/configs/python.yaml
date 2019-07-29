@@ -2,4 +2,5 @@
   - [echo 'eval (pipenv --completion)' > ~/.config/fish/completions/pipenv.fish, Adding pipenv fish completions]
   - [poetry completions fish > ~/.config/fish/completions/poetry.fish, Adding poetry fish completions]
   - [mkdir -p ~/.zfunc && poetry completions zsh > ~/.zfunc/_poetry, Adding poetry Zsh completions]
+  - [poetry config settings.virtualenvs.in-project true, Setting poetry configuration variable]
   - [pyenv rehash, Rehashing pyenv shims]
