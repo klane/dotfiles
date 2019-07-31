@@ -8,5 +8,11 @@
   - [brew update, Updating Homebrew]
   - [brew upgrade, Upgrading outdated brews]
   - [brew cask upgrade, Upgrading outdated casks]
-  - [brew gem install colorls, Installing colorls gem]
+  - command: |
+      if [ "$(brew list gem-colorls)" ]; then
+        brew gem upgrade colorls
+      else
+        brew gem install colorls
+      fi
+    description: Installing colorls gem
   - [brew cleanup, Cleanup brew cached downloads]
