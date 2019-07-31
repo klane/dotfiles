@@ -10,7 +10,7 @@
   - [brew cask upgrade, Upgrading outdated casks]
   - command: |
       if [ "$(brew list gem-colorls)" ]; then
-        brew gem upgrade colorls
+        brew gem upgrade colorls || true
       else
         brew gem install colorls
       fi
