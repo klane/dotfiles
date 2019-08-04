@@ -3,4 +3,4 @@
     ~/.zsh_plugins.txt: shells/zsh/plugins.txt
 
 - shell:
-  - [antibody update, Updating Zsh plugins]
+  - [zsh -c 'antibody update', Updating Zsh plugins]
