@@ -6,10 +6,10 @@
 - shell:
   - command: |
       fish -c \
-      'if not functions -q fisher
-          curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+      'if functions -q fisher
+        fisher self-update
       else
-          fisher self-update
+        curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
       end'
     description: Installing/Updating Fisher
   - [fish -c fisher, Updating fish plugins]
