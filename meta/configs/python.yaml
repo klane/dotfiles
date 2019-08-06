@@ -1,10 +1,11 @@
 - shell:
   - command: |
-      if command -v poetry >/dev/null 2>&1; then
+      fish -c \
+      'if command -sq poetry
         poetry self:update
       else
         curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
-      fi
+      end'
     description: Installing poetry
   - [echo 'eval (pipenv --completion)' > ~/.config/fish/completions/pipenv.fish, Adding pipenv fish completions]
   - [poetry completions fish > ~/.config/fish/completions/poetry.fish, Adding poetry fish completions]
