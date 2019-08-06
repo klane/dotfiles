@@ -9,10 +9,11 @@
   - [brew upgrade, Upgrading outdated brews]
   - [brew cask upgrade, Upgrading outdated casks]
   - command: |
-      if [ "$(brew list gem-colorls)" ]; then
+      bash -c \
+      'if [ "$(brew list gem-colorls)" ]; then
         brew gem upgrade colorls || true
       else
         brew gem install colorls
-      fi
+      fi'
     description: Installing colorls gem
   - [brew cleanup, Cleanup brew cached downloads]
