@@ -237,6 +237,15 @@ module.exports = {
       { command: 'cd ~/Documents', icon: '/Users/klane/Pictures/icons8-documents.png' },
       { command: 'cd ~/Downloads', icon: '/Users/klane/Pictures/icons8-download.png' },
       {
+        icon: '/Users/klane/Pictures/icons8-robot.png',
+        options: [
+          { label: 'mac', command: '/Users/klane/project/dotfiles/install-profile macos', icon: '/Users/klane/Pictures/icons8-mac_os_filled.png' },
+          { label: 'homebrew', command: '/Users/klane/project/dotfiles/install-config homebrew', icon: '/Users/klane/Pictures/icons8-beer.png' },
+          { label: 'python', command: '/Users/klane/project/dotfiles/install-config python', icon: '/Users/klane/Pictures/icons8-python.png' },
+          { label: 'shell', command: '/Users/klane/project/dotfiles/install-config fish zsh', icon: '/Users/klane/Pictures/icons8-shell.png' }
+        ]
+      },
+      {
         icon: '/Users/klane/Pictures/icons8-beer.png',
         options: [
           { label: 'cellar', command: 'cd /usr/local/Cellar', icon: '/Users/klane/Pictures/icons8-beer.png' },
