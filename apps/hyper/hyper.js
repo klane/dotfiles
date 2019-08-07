@@ -257,8 +257,7 @@ module.exports = {
           { label: 'log', command: 'git log -n 5', icon: '/Users/klane/Pictures/icons8-note.png' },
           { label: 'add', command: 'git add .', icon: '/Users/klane/Pictures/icons8-add_list.png' },
           { label: 'push', command: 'git push', icon: '/Users/klane/Pictures/icons8-upload.png' },
-          { label: 'pull', command: 'git pull', icon: '/Users/klane/Pictures/icons8-download.png' },
-          { label: 'clone', command: 'git clone ', prompt: true },
+          { label: 'pull', command: 'git pull', icon: '/Users/klane/Pictures/icons8-download.png' }
         ]
       }
     ],
