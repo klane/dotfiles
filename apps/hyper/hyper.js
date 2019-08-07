@@ -233,9 +233,6 @@ module.exports = {
       { command: 'exit', label: 'exit', backgroundColor: '#d13232' },
       { command: 'clear', label: 'clear', backgroundColor: '#d13232' },
       { command: 'cd ~', icon: '/Users/klane/Pictures/icons8-home.png' },
-      { command: 'cd ~/Desktop', icon: '/Users/klane/Pictures/icons8-computer.png' },
-      { command: 'cd ~/Documents', icon: '/Users/klane/Pictures/icons8-documents.png' },
-      { command: 'cd ~/Downloads', icon: '/Users/klane/Pictures/icons8-download.png' },
       {
         icon: '/Users/klane/Pictures/icons8-robot.png',
         options: [
