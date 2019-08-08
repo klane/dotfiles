@@ -243,13 +243,6 @@ module.exports = {
         ]
       },
       {
-        icon: '/Users/klane/Pictures/icons8-beer.png',
-        options: [
-          { label: 'cellar', command: 'cd /usr/local/Cellar', icon: '/Users/klane/Pictures/icons8-beer.png' },
-          { label: 'caskroom', command: 'cd /usr/local/Caskroom', icon: '/Users/klane/Pictures/icons8-wooden_beer_keg.png' }
-        ]
-      },
-      {
         icon: '/Users/klane/Pictures/icons8-git.png',
         options: [
           { label: 'status', command: 'git status' },
