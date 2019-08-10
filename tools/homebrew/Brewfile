@@ -4,14 +4,9 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'getantibody/tap'
 
-# Utilities
-brew 'direnv'
+# Shells
+brew 'antibody'
 brew 'fish'
-brew 'gnupg'
-brew 'imagemagick'
-brew 'mas'
-brew 'openssh'
-brew 'pinentry-mac'
 brew 'zsh'
 
 # Programming Languages
@@ -20,9 +15,15 @@ brew 'python'
 brew 'r'
 brew 'ruby'
 
-# Programming Tools
-brew 'antibody'
+# Utilities
 brew 'brew-gem'
+brew 'direnv'
+brew 'gnupg'
+brew 'mas'
+brew 'openssh'
+brew 'pinentry-mac'
+
+# Programming Tools
 brew 'git'
 brew 'gradle'
 brew 'hub'
@@ -40,6 +41,18 @@ brew 'pyenv'
 # Support Casks
 cask 'xquartz'
 
+# IDEs & Editors
+cask 'jetbrains-toolbox'
+cask 'rstudio'
+cask 'sublime-text'
+cask 'visual-studio-code'
+
+# Images
+brew 'imagemagick'
+cask 'gimp'
+cask 'icons8'
+cask 'inkscape'
+
 # Casks
 cask 'cakebrew'
 cask 'dashlane'
@@ -47,19 +60,12 @@ cask 'db-browser-for-sqlite'
 cask 'flux'
 cask 'font-meslo-nerd-font'
 cask 'foxitreader'
-cask 'gimp'
 cask 'gitkraken'
 cask 'google-chrome'
 cask 'hyper'
-cask 'icons8'
-cask 'inkscape'
 cask 'iterm2'
-cask 'jetbrains-toolbox'
 cask 'keepingyouawake'
 cask 'mactex'
-cask 'rstudio'
 cask 'slack'
 cask 'spotify'
 cask 'steam'
-cask 'sublime-text'
-cask 'visual-studio-code'
