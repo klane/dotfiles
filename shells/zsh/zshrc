@@ -30,6 +30,8 @@ case `uname` in
         ;;
 esac
 
+export DOTFILES=~/project/dotfiles
+
 # Configure Pipenv
 eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1

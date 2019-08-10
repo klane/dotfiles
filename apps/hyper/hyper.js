@@ -236,10 +236,10 @@ module.exports = {
       {
         icon: '/Users/klane/Pictures/icons8-robot.png',
         options: [
-          { label: 'mac', command: '/Users/klane/project/dotfiles/install-profile macos', icon: '/Users/klane/Pictures/icons8-mac_os_filled.png' },
-          { label: 'homebrew', command: '/Users/klane/project/dotfiles/install-config homebrew', icon: '/Users/klane/Pictures/icons8-beer.png' },
-          { label: 'python', command: '/Users/klane/project/dotfiles/install-config python', icon: '/Users/klane/Pictures/icons8-python.png' },
-          { label: 'shell', command: '/Users/klane/project/dotfiles/install-config fish zsh', icon: '/Users/klane/Pictures/icons8-shell.png' }
+          { label: 'mac', command: '$DOTFILES/install-profile macos', icon: '/Users/klane/Pictures/icons8-mac_os_filled.png' },
+          { label: 'homebrew', command: '$DOTFILES/install-config homebrew', icon: '/Users/klane/Pictures/icons8-beer.png' },
+          { label: 'python', command: '$DOTFILES/install-config python', icon: '/Users/klane/Pictures/icons8-python.png' },
+          { label: 'shell', command: '$DOTFILES/install-config fish zsh', icon: '/Users/klane/Pictures/icons8-shell.png' }
         ]
       },
       {

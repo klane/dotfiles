@@ -10,4 +10,5 @@ alias lc 'colorls -lA --sd'
 
 set -x PIPENV_VENV_IN_PROJECT true
 set -x SHELL fish
+set -x DOTFILES ~/project/dotfiles
 set fish_greeting
