@@ -10,5 +10,9 @@
 
     // telemetry
     "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false
+    "telemetry.enableCrashReporter": false,
+
+    // terminal
+    "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish"
 }
