@@ -1,7 +1,12 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
+    "close_windows_when_empty": true,
     "ensure_newline_at_eof_on_save": true,
+    "highlight_line": true,
+    "highlight_modified_tabs": true,
+    "open_files_in_new_window": false,
+    "scroll_past_end": false,
     "spell_check": true,
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
