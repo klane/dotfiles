@@ -1,0 +1,14 @@
+{
+    // editor
+    "editor.scrollBeyondLastLine": false,
+
+    // files
+    "files.autoSave": "onFocusChange",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+
+    // telemetry
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
+}
