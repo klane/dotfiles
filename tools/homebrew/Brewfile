@@ -5,9 +5,10 @@ tap 'homebrew/cask-versions'
 tap 'getantibody/tap'
 
 # Shells
-brew 'antibody'
 brew 'fish'
 brew 'zsh'
+brew 'antibody'
+brew 'starship'
 
 # Programming Languages
 cask 'java8'
