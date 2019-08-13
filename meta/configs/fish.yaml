@@ -2,6 +2,7 @@
     ~/.config/fish/config.fish: shells/fish/config.fish
     ~/.config/fish/fishfile: shells/fish/fishfile
     ~/.config/fish/conf.d/addpath.fish: shells/fish/addpath.fish
+    ~/.config/starship.toml: shells/starship/starship.toml
 
 - shell:
   - command: |

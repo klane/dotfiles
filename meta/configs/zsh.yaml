@@ -1,6 +1,7 @@
 - link:
     ~/.zshrc: shells/zsh/zshrc
     ~/.zsh_plugins.txt: shells/zsh/plugins.txt
+    ~/.config/starship.toml: shells/starship/starship.toml
 
 - shell:
   - [zsh -c 'antibody update', Updating Zsh plugins]
