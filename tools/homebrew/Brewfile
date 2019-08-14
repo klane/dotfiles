@@ -25,6 +25,7 @@ brew 'openssh'
 brew 'pinentry-mac'
 
 # Programming Tools
+brew 'diff-so-fancy'
 brew 'git'
 brew 'gradle'
 brew 'hub'
