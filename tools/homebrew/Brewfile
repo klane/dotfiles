@@ -31,6 +31,7 @@ brew 'diff-so-fancy'
 brew 'git'
 brew 'gradle'
 brew 'hub'
+brew 'lazygit'
 brew 'legit'
 brew 'travis'
 
