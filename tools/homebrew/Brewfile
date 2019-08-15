@@ -16,6 +16,7 @@ brew 'python'
 brew 'r'
 brew 'ruby'
 brew 'rust'
+brew 'rustup'
 
 # Utilities
 brew 'brew-gem'
