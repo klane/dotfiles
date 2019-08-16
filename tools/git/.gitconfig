@@ -1,9 +1,12 @@
 [user]
   name = Kevin Lane
   email = lane.kevin.a@gmail.com
+  signingkey = 1C86152D9F2E3D7F
 [core]
   autocrlf = false
   editor = 'subl' --wait
   eol = lf
   excludesfile = ~/.gitignore
   filemode = false
+[commit]
+  gpgsign = true
