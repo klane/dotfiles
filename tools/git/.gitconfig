@@ -11,6 +11,13 @@
   pager = diff-so-fancy | less --tabs=4 -RFX
 [commit]
   gpgsign = true
+[alias]
+	switch = !legit switch
+	sync = !legit sync
+	publish = !legit publish
+	unpublish = !legit unpublish
+	undo = !legit undo
+	branches = !legit branches
 [color]
   ui = true
 [color "diff-highlight"]
