@@ -5,12 +5,5 @@
     ~/.config/starship.toml: shells/starship/starship.toml
 
 - shell:
-  - command: |
-      fish -c \
-      'if functions -q fisher
-        fisher self-update
-      else
-        curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-      end'
-    description: Installing/Updating Fisher
+  - [$DOTFILES/shells/fish/install-fisher, Installing Fisher]
   - [fish -c fisher, Updating fish plugins]

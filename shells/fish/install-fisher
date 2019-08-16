@@ -1,0 +1,7 @@
+#!/usr/local/bin/fish
+
+if functions -q fisher
+    fisher self-update
+else
+    curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+end
