@@ -1,19 +1,9 @@
 - link:
     ~/Brewfile: tools/homebrew/Brewfile
+    /usr/local/bin/brewup: tools/homebrew/brewup
 
 - brewfile:
   - ~/Brewfile
 
 - shell:
-  - [brew update, Updating Homebrew]
-  - [brew upgrade, Upgrading outdated brews]
-  - [brew cask upgrade, Upgrading outdated casks]
-  - command: |
-      bash -c \
-      'if [ "$(brew list gem-colorls)" ]; then
-        brew gem upgrade colorls || true
-      else
-        brew gem install colorls
-      fi'
-    description: Installing colorls gem
-  - [brew cleanup, Cleanup brew cached downloads]
+  - [brewup, Updating Homebrew and installed programs]
