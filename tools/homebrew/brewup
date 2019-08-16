@@ -1,23 +1,28 @@
 #!/usr/bin/env bash
 
-echo 'Updating Homebrew'
+# function to echo green text
+function gecho() {
+    echo "$(tput setaf 2)$1$(tput sgr0)"
+}
+
+gecho 'Updating Homebrew'
 brew update
 
-echo 'Upgrading outdated brews'
+gecho 'Upgrading outdated brews'
 brew upgrade
 
-echo 'Upgrading outdated casks'
+gecho 'Upgrading outdated casks'
 brew cask upgrade
 
-echo 'Installing missing packages'
+gecho 'Installing missing packages'
 brew bundle check --file=~/Brewfile || brew bundle --file=~/Brewfile
 
-echo 'Installing colorls gem'
+gecho 'Installing colorls gem'
 if [ "$(brew list gem-colorls)" ]; then
     brew gem upgrade colorls || true
 else
     brew gem install colorls
 fi
 
-echo 'Cleanup brew cached downloads'
+gecho 'Cleanup brew cached downloads'
 brew cleanup
