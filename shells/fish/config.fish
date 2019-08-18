@@ -7,6 +7,7 @@ alias df 'df -h'
 alias du 'du -h'
 alias git hub
 alias lc 'colorls -lA --gs --sd'
+alias lct 'colorls --tree --gs --sd'
 alias lg lazygit
 
 set -x PIPENV_VENV_IN_PROJECT true
