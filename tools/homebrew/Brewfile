@@ -1,7 +1,7 @@
 # Taps
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
+tap 'homebrew/cask' if OS.mac?
+tap 'homebrew/cask-fonts' if OS.mac?
+tap 'homebrew/cask-versions' if OS.mac?
 tap 'getantibody/tap'
 
 # Shells
@@ -22,9 +22,9 @@ brew 'rustup'
 brew 'brew-gem'
 brew 'direnv'
 brew 'gnupg'
-brew 'mas'
+brew 'mas' if OS.mac?
 brew 'openssh'
-brew 'pinentry-mac'
+brew 'pinentry-mac' if OS.mac?
 
 # Programming Tools
 brew 'diff-so-fancy'
