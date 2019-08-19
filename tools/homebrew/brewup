@@ -11,8 +11,10 @@ brew update
 gecho 'Upgrading outdated brews'
 brew upgrade
 
-gecho 'Upgrading outdated casks'
-brew cask upgrade
+if [ "$(uname)" == "Darwin" ]; then
+    gecho 'Upgrading outdated casks'
+    brew cask upgrade
+fi
 
 gecho 'Installing missing packages'
 brew bundle check --file=~/Brewfile || brew bundle --file=~/Brewfile
