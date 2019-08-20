@@ -5,3 +5,6 @@
 [submodule "meta/dotbot-brew"]
 	path = meta/dotbot-brew
 	url = git://github.com/d12frosted/dotbot-brew.git
+[submodule "meta/dotbot-asdf"]
+	path = meta/dotbot-asdf
+	url = git://github.com/sobolevn/dotbot-asdf.git
