@@ -11,6 +11,7 @@ brew 'antibody'
 brew 'starship'
 
 # Programming Languages
+brew 'go'
 cask 'java8'
 brew 'python'
 brew 'r'
