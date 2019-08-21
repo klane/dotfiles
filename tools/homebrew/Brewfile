@@ -16,7 +16,6 @@ cask 'java8'
 brew 'python'
 brew 'r'
 brew 'ruby'
-brew 'rust'
 brew 'rustup'
 
 # Utilities
