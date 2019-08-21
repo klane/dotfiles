@@ -28,6 +28,7 @@ brew 'openssh'
 brew 'pinentry-mac' if OS.mac?
 
 # Programming Tools
+brew 'asdf'
 brew 'diff-so-fancy'
 brew 'git'
 brew 'gradle'
