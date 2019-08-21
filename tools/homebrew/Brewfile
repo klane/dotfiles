@@ -4,6 +4,16 @@ tap 'homebrew/cask-fonts' if OS.mac?
 tap 'homebrew/cask-versions' if OS.mac?
 tap 'getantibody/tap'
 
+# Dupes
+brew 'awk'
+brew 'coreutils'
+brew 'curl'
+brew 'diffutils'
+brew 'findutils'
+brew 'gnu-sed'
+brew 'gnu-which'
+brew 'grep'
+
 # Shells
 brew 'fish'
 brew 'zsh'
