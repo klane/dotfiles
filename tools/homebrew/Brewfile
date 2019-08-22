@@ -27,6 +27,11 @@ brew 'osxutils' if OS.mac?
 brew 'pinentry-mac' if OS.mac?
 brew 'trash' if OS.mac?
 
+# Information Utilities
+brew 'howdoi'
+brew 'tldr'
+brew 'wtf'
+
 # Shells
 brew 'fish'
 brew 'zsh'
