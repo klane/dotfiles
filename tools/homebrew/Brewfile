@@ -21,6 +21,12 @@ brew 'htop'
 brew 'hyperfine'
 brew 'tmux'
 
+# macOS Utilities
+brew 'mas' if OS.mac?
+brew 'osxutils' if OS.mac?
+brew 'pinentry-mac' if OS.mac?
+brew 'trash' if OS.mac?
+
 # Shells
 brew 'fish'
 brew 'zsh'
@@ -39,9 +45,7 @@ brew 'rustup'
 brew 'brew-gem'
 brew 'direnv'
 brew 'gnupg'
-brew 'mas' if OS.mac?
 brew 'openssh'
-brew 'pinentry-mac' if OS.mac?
 
 # Programming Tools
 brew 'asdf'
