@@ -14,6 +14,13 @@ brew 'gnu-sed'
 brew 'gnu-which'
 brew 'grep'
 
+# Utilities
+brew 'bat'
+brew 'fzf'
+brew 'htop'
+brew 'hyperfine'
+brew 'tmux'
+
 # Shells
 brew 'fish'
 brew 'zsh'
