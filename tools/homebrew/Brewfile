@@ -13,6 +13,8 @@ brew 'findutils'
 brew 'gnu-sed'
 brew 'gnu-which'
 brew 'grep'
+brew 'rsync'
+brew 'wget'
 
 # Utilities
 brew 'bat'
