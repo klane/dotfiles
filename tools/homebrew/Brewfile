@@ -18,9 +18,12 @@ brew 'wget'
 
 # Utilities
 brew 'bat'
+brew 'exa'
+brew 'fd'
 brew 'fzf'
 brew 'htop'
 brew 'hyperfine'
+brew 'speedtest-cli'
 brew 'tmux'
 brew 'tokei'
 
