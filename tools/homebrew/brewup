@@ -19,12 +19,5 @@ fi
 gecho 'Installing missing packages'
 brew bundle check --file=~/Brewfile || brew bundle --file=~/Brewfile
 
-gecho 'Installing colorls gem'
-if [ "$(brew list gem-colorls)" ]; then
-    brew gem upgrade colorls || true
-else
-    brew gem install colorls
-fi
-
 gecho 'Cleanup brew cached downloads'
 brew cleanup

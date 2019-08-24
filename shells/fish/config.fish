@@ -6,10 +6,10 @@ end
 alias df 'df -h'
 alias du 'du -h'
 alias git hub
-alias lc 'colorls -lA --gs --sd'
-alias lct 'colorls --tree --gs --sd'
+alias lc 'exa --all --long --git --group-directories-first --icons'
 alias lg lazygit
 alias loc 'tokei --sort lines'
+alias tree 'lc --tree'
 
 set -x PIPENV_VENV_IN_PROJECT true
 set -x SHELL fish

@@ -49,11 +49,9 @@ brew 'go'
 cask 'java8'
 brew 'python'
 brew 'r'
-brew 'ruby'
 brew 'rustup'
 
 # Utilities
-brew 'brew-gem'
 brew 'direnv'
 brew 'gnupg'
 brew 'openssh'
