@@ -9,6 +9,7 @@ alias git hub
 alias lc 'colorls -lA --gs --sd'
 alias lct 'colorls --tree --gs --sd'
 alias lg lazygit
+alias loc 'tokei --sort lines'
 
 set -x PIPENV_VENV_IN_PROJECT true
 set -x SHELL fish
