@@ -2,6 +2,7 @@ jhillyerd/plugin-git
 dteoh/fish-homebrew-asdf
 rominf/omf-plugin-pyenv
 oh-my-fish/plugin-direnv
+oh-my-fish/plugin-thefuck
 kennethreitz/fish-pipenv
 danhper/fish-ssh-agent
 decors/fish-colored-man

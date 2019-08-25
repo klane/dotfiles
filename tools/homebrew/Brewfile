@@ -24,6 +24,7 @@ brew 'fzf'
 brew 'htop'
 brew 'hyperfine'
 brew 'speedtest-cli'
+brew 'thefuck'
 brew 'tmux'
 brew 'tokei'
 
