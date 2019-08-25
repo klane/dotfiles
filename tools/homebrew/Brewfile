@@ -19,6 +19,7 @@ brew 'wget'
 # Utilities
 brew 'bat'
 brew 'exa'
+brew 'fasd'
 brew 'fd'
 brew 'fzf'
 brew 'htop'
