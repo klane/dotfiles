@@ -91,6 +91,7 @@ cask 'icons8'
 cask 'inkscape'
 
 # Casks
+cask 'boostnote'
 cask 'cakebrew'
 cask 'dashlane'
 cask 'db-browser-for-sqlite'
