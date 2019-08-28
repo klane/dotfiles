@@ -37,7 +37,7 @@ eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1
 
 alias git=hub
-alias lc='colorls -lA --sd'
+alias lc='exa --all --long --git --group-directories-first --icons'
 
 # Travis CI completion
 [ -f /Users/klane/.travis/travis.sh ] && source /Users/klane/.travis/travis.sh
