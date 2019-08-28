@@ -195,10 +195,11 @@ module.exports = {
         opacity: 0.5,
       },
       mapIcons: {
-        ruby: ['brew']
+        ruby: ['brew', 'brewup']
       },
       mapColors: {
-        brew: '#D8494F'
+        brew: '#D8494F',
+        brewup: '#D8494F'
       },
       disableColors: false
     },
