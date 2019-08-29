@@ -70,6 +70,7 @@ brew 'gradle'
 brew 'hub'
 brew 'lazygit'
 brew 'legit'
+brew 'pre-commit'
 brew 'travis'
 
 # Python Tools
