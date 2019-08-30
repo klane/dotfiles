@@ -1,3 +1,6 @@
 - link:
     ~/.gitconfig: tools/git/.gitconfig
     ~/.gitignore: tools/git/.gitignore
+
+- shell:
+    - [gitup --add ~/.repos, Add gitup bookmark to ~/.repos]
