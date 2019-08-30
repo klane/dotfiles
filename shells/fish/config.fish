@@ -15,7 +15,7 @@ alias rgs 'rg --sort=path'
 alias tree 'lc --tree'
 
 set -x PIPENV_VENV_IN_PROJECT true
-set -x SHELL fish
+set -x SHELL (brew --prefix)/bin/fish
 set -x DOTFILES ~/project/dotfiles
 set fish_greeting
 
