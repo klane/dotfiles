@@ -1,0 +1,6 @@
+- shell:
+    - [ghq get tmux-plugins/tpm, Clone tpm]
+
+- link:
+    ~/.tmux.conf: tools/tmux/tmux.conf
+    ~/.tmux/plugins/tpm: ~/.repos/github.com/tmux-plugins/tpm

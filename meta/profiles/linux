@@ -2,5 +2,6 @@ homebrew
 git
 fish
 zsh
+tmux
 htop
 python

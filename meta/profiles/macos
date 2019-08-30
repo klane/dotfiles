@@ -3,6 +3,7 @@ git
 ssh
 fish
 zsh
+tmux
 htop
 python
 hyper
