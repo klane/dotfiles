@@ -6,6 +6,7 @@ end
 alias df 'df -h'
 alias du 'du -h'
 alias git hub
+alias htop 'htop --delay 10'
 alias lc 'exa --all --long --git --group-directories-first --icons'
 alias lg lazygit
 alias loc 'tokei --sort lines'
