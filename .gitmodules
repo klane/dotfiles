@@ -1,10 +1,10 @@
 [submodule "meta/dotbot"]
-    path = meta/dotbot
+	path = dependencies/dotbot
     url = git://github.com/anishathalye/dotbot.git
     ignore = dirty
 [submodule "meta/dotbot-brew"]
-	path = meta/dotbot-brew
+	path = dependencies/dotbot-brew
 	url = git://github.com/d12frosted/dotbot-brew.git
 [submodule "meta/dotbot-asdf"]
-	path = meta/dotbot-asdf
+	path = dependencies/dotbot-asdf
 	url = git://github.com/sobolevn/dotbot-asdf.git

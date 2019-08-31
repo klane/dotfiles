@@ -5,6 +5,7 @@ set -e
 BASE_CONFIG="base"
 CONFIG_SUFFIX=".yaml"
 
+DEPENDENCIES_DIR="dependencies"
 META_DIR="meta"
 CONFIG_DIR="configs"
 PROFILES_DIR="profiles"
@@ -28,5 +29,5 @@ echo ${CONFIGS}
 for config in ${CONFIGS} ${@}; do
     echo -e "\nConfigure $config"
     configFile="$(mktemp)" ; echo -e "$(<"${BASE_DIR}/${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${BASE_DIR}/${META_DIR}/${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")" > "$configFile"
-    "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir "${META_DIR}/dotbot-asdf" --plugin-dir "${META_DIR}/dotbot-brew" -c "$configFile" ; rm -f "$configFile"
+    "${BASE_DIR}/${DEPENDENCIES_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir "${DEPENDENCIES_DIR}/dotbot-asdf" --plugin-dir "${DEPENDENCIES_DIR}/dotbot-brew" -c "$configFile" ; rm -f "$configFile"
 done
