@@ -101,6 +101,7 @@ cask 'inkscape'
 # Casks
 cask 'boostnote'
 cask 'cakebrew'
+cask 'cheatsheet'
 cask 'dashlane'
 cask 'db-browser-for-sqlite'
 cask 'flux'
