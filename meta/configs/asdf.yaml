@@ -1,3 +1,6 @@
+- link:
+    ~/.asdfrc: tools/asdf/asdfrc
+
 - asdf:
   - plugin: golang
   - plugin: java
