@@ -1,0 +1,6 @@
+- asdf:
+  - plugin: golang
+  - plugin: java
+  - plugin: python
+  - plugin: R
+  - plugin: rust
