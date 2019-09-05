@@ -2,7 +2,8 @@
     ~/.asdfrc: tools/asdf/asdfrc
 
 - asdf:
-  - plugin: golang
+  - plugin: go
+    url: https://github.com/kennyp/asdf-golang
   - plugin: java
   - plugin: python
   - plugin: R
