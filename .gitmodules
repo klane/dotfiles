@@ -8,3 +8,6 @@
 [submodule "dependencies/dotbot-asdf"]
     path = dependencies/dotbot-asdf
     url = git://github.com/sobolevn/dotbot-asdf.git
+[submodule "dependencies/dotbot-vscode"]
+    path = dependencies/dotbot-vscode
+    url = git://github.com/hujianxin/dotbot-vscode.git
