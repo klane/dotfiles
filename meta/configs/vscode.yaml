@@ -1,2 +1,6 @@
 - link:
     ~/Library/Application Support/Code/User/settings.json: apps/vscode/settings.json
+
+- vscodefile:
+    file: apps/vscode/extensions
+    insiders: false
