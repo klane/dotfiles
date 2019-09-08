@@ -26,5 +26,13 @@
     // minimap highlight
     "selectinsidesidebar.defaultStyle": {
         "overviewRulerColor": "lightgreen"
-    }
+    },
+
+    // todo-tree
+    "todo-tree.flat": true,
+    "todo-tree.ripgrep": "/usr/local/bin/rg",
+    "todo-tree.showCountsInTree": true,
+    "todo-tree.showInExplorer": false,
+    "todo-tree.statusBar": "tags",
+    "todohighlight.isEnable": true
 }
