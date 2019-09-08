@@ -34,5 +34,10 @@
     "todo-tree.showCountsInTree": true,
     "todo-tree.showInExplorer": false,
     "todo-tree.statusBar": "tags",
-    "todohighlight.isEnable": true
+    "todohighlight.isEnable": true,
+
+    // project manager
+    "projectManager.git.baseFolders": [
+        "/Users/klane/project"
+    ]
 }
