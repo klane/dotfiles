@@ -30,6 +30,7 @@
 
     // todo-tree
     "todo-tree.flat": true,
+    "todo-tree.regex": "((//|#|<!--|;|/\\*|^)\\s*[!?]?\\s*($TAGS)|^\\s*- \\[ \\])",
     "todo-tree.ripgrep": "/usr/local/bin/rg",
     "todo-tree.showCountsInTree": true,
     "todo-tree.showInExplorer": false,
