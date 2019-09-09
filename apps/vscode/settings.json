@@ -34,6 +34,19 @@
     "todo-tree.showCountsInTree": true,
     "todo-tree.showInExplorer": false,
     "todo-tree.statusBar": "tags",
+    "todo-tree.customHighlight": {
+        "TODO": {
+            "foreground": "white",
+            "background": "green",
+            "iconColour": "green"
+        },
+        "FIXME": {
+            "icon": "alert",
+            "foreground": "black",
+            "background": "yellow",
+            "iconColour": "yellow"
+        }
+    },
 
     // project manager
     "projectManager.git.baseFolders": [
