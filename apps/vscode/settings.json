@@ -38,13 +38,15 @@
         "TODO": {
             "foreground": "white",
             "background": "green",
-            "iconColour": "green"
+            "iconColour": "green",
+            "rulerColour": "green"
         },
         "FIXME": {
             "icon": "alert",
             "foreground": "black",
             "background": "yellow",
-            "iconColour": "yellow"
+            "iconColour": "yellow",
+            "rulerColour": "yellow"
         }
     },
 
