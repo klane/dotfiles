@@ -35,6 +35,7 @@
     "todo-tree.showCountsInTree": true,
     "todo-tree.showInExplorer": false,
     "todo-tree.statusBar": "tags",
+    "todo-tree.tags": ["TODO", "FIXME", "BUG"],
     "todo-tree.customHighlight": {
         "TODO": {
             "foreground": "white",
@@ -48,6 +49,13 @@
             "background": "yellow",
             "iconColour": "yellow",
             "rulerColour": "yellow"
+        },
+        "BUG": {
+            "icon": "bug",
+            "foreground": "white",
+            "background": "red",
+            "iconColour": "red",
+            "rulerColour": "red"
         }
     },
 
