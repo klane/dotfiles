@@ -62,5 +62,9 @@
     // project manager
     "projectManager.git.baseFolders": [
         "/Users/klane/project"
-    ]
+    ],
+
+    // theme
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-icons"
 }
