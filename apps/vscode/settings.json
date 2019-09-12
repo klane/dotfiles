@@ -65,6 +65,6 @@
     ],
 
     // theme
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "vscode-icons"
 }
