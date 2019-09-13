@@ -9,3 +9,7 @@
 
 # Python
 *.pyc
+
+# Language versions
+.python-version
+.tool-versions
