@@ -4,6 +4,9 @@
 # IntelliJ IDEA & PyCharm
 .idea/
 
+# Visual Studio Code
+.vscode/
+
 # direnv
 .envrc
 
