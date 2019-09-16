@@ -72,5 +72,8 @@
     "github.username": "klane",
 
     // color highlight
-    "color-highlight.markerType": "dot-before"
+    "color-highlight.markerType": "dot-before",
+
+    // git graph
+    "git-graph.fetchAvatars": true
 }
