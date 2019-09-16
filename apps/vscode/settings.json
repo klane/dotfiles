@@ -75,5 +75,15 @@
     "color-highlight.markerType": "dot-before",
 
     // git graph
-    "git-graph.fetchAvatars": true
+    "git-graph.fetchAvatars": true,
+    "git-graph.showStatusBarItem": false,
+
+    // commands
+    "commands.commands": [
+        {
+            "text": "$(graph)",
+            "command": "git-graph.view",
+            "tooltip": "Git Graph"
+        }
+    ]
 }
