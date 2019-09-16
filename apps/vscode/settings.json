@@ -63,6 +63,7 @@
     "projectManager.git.baseFolders": [
         "/Users/klane/project"
     ],
+    "projectManager.showProjectNameInStatusBar": false,
 
     // theme
     "workbench.colorTheme": "One Dark Pro",
