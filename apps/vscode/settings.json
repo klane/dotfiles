@@ -84,6 +84,11 @@
             "text": "$(graph)",
             "command": "git-graph.view",
             "tooltip": "Git Graph"
+        },
+        {
+            "text": "$(project)",
+            "command": "glo.open",
+            "tooltip": "GitKraken Glo"
         }
     ]
 }
