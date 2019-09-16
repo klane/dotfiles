@@ -69,5 +69,8 @@
     "workbench.iconTheme": "material-icon-theme",
 
     // github issues
-    "github.username": "klane"
+    "github.username": "klane",
+
+    // color highlight
+    "color-highlight.markerType": "dot-before"
 }
