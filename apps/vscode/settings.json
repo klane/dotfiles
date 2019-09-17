@@ -91,5 +91,30 @@
             "command": "glo.open",
             "tooltip": "GitKraken Glo"
         }
-    ]
+    ],
+
+    // colors
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#333842",
+        "badge.background": "#528BFF",
+        "editorLineNumber.foreground": "#636D83",
+        "editorLineNumber.activeForeground": "#D7DAE0",
+        "sideBarSectionHeader.background": "#333842",
+        "terminal.ansiBlack": "#293340",
+        "terminal.ansiBlue": "#4CB2FF",
+        "terminal.ansiCyan": "#2DCED0",
+        "terminal.ansiGreen": "#61BA86",
+        "terminal.ansiMagenta": "#BE86E3",
+        "terminal.ansiRed": "#E17E85",
+        "terminal.ansiWhite": "#CDD2E9",
+        "terminal.ansiYellow": "#FFEC8E",
+        "terminal.ansiBrightBlack": "#546386",
+        "terminal.ansiBrightBlue": "#4CB2FF",
+        "terminal.ansiBrightCyan": "#2DCED0",
+        "terminal.ansiBrightGreen": "#61BA86",
+        "terminal.ansiBrightMagenta": "#BE86E3",
+        "terminal.ansiBrightRed": "#E17E85",
+        "terminal.ansiBrightWhite": "#CDD2E9",
+        "terminal.ansiBrightYellow": "#FFB68E"
+    }
 }
