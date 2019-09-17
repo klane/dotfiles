@@ -63,6 +63,7 @@
     "projectManager.git.baseFolders": [
         "/Users/klane/project"
     ],
+    "projectManager.git.maxDepthRecursion": 1,
     "projectManager.showProjectNameInStatusBar": false,
 
     // theme
