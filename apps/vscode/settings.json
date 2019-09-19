@@ -119,5 +119,9 @@
             "command": "glo.open",
             "tooltip": "GitKraken Glo"
         }
-    ]
+    ],
+
+    // python
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false
 }
