@@ -1,3 +1,5 @@
+![](https://github.com/klane/dotfiles/workflows/Format/badge.svg)
+
 # Installation
 
 ## macOS
