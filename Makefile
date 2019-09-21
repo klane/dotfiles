@@ -13,7 +13,7 @@ mac:
 	@make macos
 
 $(CONFIGS):
-	./install-config $@
+	@./install-config $@
 
 $(PROFILES):
-	./install-profile $@
+	@./install-profile $@
