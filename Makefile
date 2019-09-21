@@ -1,3 +1,4 @@
+MAKEFLAGS += --silent
 CONFIGS := $(shell ls meta/configs | sd '.yaml' '')
 PROFILES := $(shell ls meta/profiles)
 
