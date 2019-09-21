@@ -1,16 +1,16 @@
-[submodule "dependencies/dotbot"]
-    path = dependencies/dotbot
+[submodule "dotbot"]
+    path = .dotbot/dotbot
     url = git://github.com/anishathalye/dotbot.git
     ignore = dirty
-[submodule "dependencies/dotbot-asdf"]
-    path = dependencies/dotbot-asdf
+[submodule "dotbot-asdf"]
+    path = .dotbot/plugins/dotbot-asdf
     url = git://github.com/sobolevn/dotbot-asdf.git
-[submodule "dependencies/dotbot-brew"]
-    path = dependencies/dotbot-brew
+[submodule "dotbot-brew"]
+    path = .dotbot/plugins/dotbot-brew
     url = git://github.com/d12frosted/dotbot-brew.git
-[submodule "dependencies/dotbot-ghq"]
-    path = dependencies/dotbot-ghq
+[submodule "dotbot-ghq"]
+    path = .dotbot/plugins/dotbot-ghq
     url = git://github.com/klane/dotbot-ghq.git
-[submodule "dependencies/dotbot-vscode"]
-    path = dependencies/dotbot-vscode
+[submodule "dotbot-vscode"]
+    path = .dotbot/plugins/dotbot-vscode
     url = git://github.com/hujianxin/dotbot-vscode.git
