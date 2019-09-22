@@ -5,20 +5,20 @@ set -e
 BASE_CONFIG="base"
 CONFIG_SUFFIX=".yaml"
 
-DEPENDENCIES_DIR="dependencies"
-META_DIR="meta"
-CONFIG_DIR="configs"
-PROFILES_DIR="profiles"
+META_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASE_DIR="$(dirname ${META_DIR})"
 
-DOTBOT_DIR="dotbot"
+PLUGIN_DIR="${META_DIR}/plugins"
+CONFIG_DIR="${META_DIR}/configs"
+PROFILES_DIR="${META_DIR}/profiles"
+
+DOTBOT_DIR="${META_DIR}/dotbot"
 DOTBOT_BIN="bin/dotbot"
-
-BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASE_DIR}"
 git submodule update --init --recursive --remote
 
 for config in ${@}; do
-    configFile="$(mktemp)" ; echo -e "$(<"${BASE_DIR}/${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${BASE_DIR}/${META_DIR}/${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")" > "$configFile"
-    "${BASE_DIR}/${DEPENDENCIES_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir "${DEPENDENCIES_DIR}/dotbot-*" -c "$configFile" ; rm -f "$configFile"
+    configFile="$(mktemp)" ; echo -e "$(<"${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")" > "$configFile"
+    "${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-*" -c "$configFile" ; rm -f "$configFile"
 done

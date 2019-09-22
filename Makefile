@@ -1,6 +1,6 @@
 MAKEFLAGS += --no-print-directory
-CONFIGS := $(shell ls meta/configs | sd '.yaml' '')
-PROFILES := $(shell ls meta/profiles)
+CONFIGS := $(shell ls .dotbot/configs | sd '.yaml' '')
+PROFILES := $(shell ls .dotbot/profiles)
 
 all:
 ifeq ($(shell uname), Darwin)
@@ -13,7 +13,7 @@ mac:
 	@make macos
 
 $(CONFIGS):
-	@./install-config $@
+	@.dotbot/install-config $@
 
 $(PROFILES):
-	@./install-profile $@
+	@.dotbot/install-profile $@
