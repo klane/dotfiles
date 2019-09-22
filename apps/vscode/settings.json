@@ -123,5 +123,11 @@
 
     // python
     "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": false,
+
+    "material-icon-theme.folders.associations": {
+        "git": "git",
+        "profiles": "meta",
+        "vscode": "vscode"
+    }
 }
