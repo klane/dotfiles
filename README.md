@@ -1,4 +1,5 @@
 ![](https://github.com/klane/dotfiles/workflows/Format/badge.svg)
+![](https://api.dependabot.com/badges/status?host=github&repo=klane/dotfiles)
 
 # Installation
 
