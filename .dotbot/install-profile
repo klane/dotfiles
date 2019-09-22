@@ -16,7 +16,6 @@ DOTBOT_DIR="${META_DIR}/dotbot"
 DOTBOT_BIN="bin/dotbot"
 
 cd "${BASE_DIR}"
-git submodule update --init --recursive --remote
 
 while IFS= read -r config; do
     CONFIGS+=" ${config}"

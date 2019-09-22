@@ -13,7 +13,12 @@ mac:
 	@make macos
 
 $(CONFIGS):
+	@make submodule
 	@.dotbot/install-config $@
 
 $(PROFILES):
+	@make submodule
 	@.dotbot/install-profile $@
+
+submodule:
+	@git submodule update --init --recursive --remote
