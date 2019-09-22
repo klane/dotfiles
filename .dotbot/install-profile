@@ -22,9 +22,9 @@ while IFS= read -r config; do
     CONFIGS+=" ${config}"
 done < "${PROFILE_DIR}/$1"
 
-shift
+echo "Configs in $1:${CONFIGS}"
 
-echo ${CONFIGS}
+shift
 
 for config in ${CONFIGS} ${@}; do
     echo -e "\nConfigure $config"

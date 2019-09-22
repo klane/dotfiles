@@ -18,6 +18,7 @@ cd "${BASE_DIR}"
 git submodule update --init --recursive --remote
 
 for config in ${@}; do
+    echo -e "\nConfigure $config"
     configFile="$(mktemp)" ; echo -e "$(<"${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")" > "$configFile"
     "${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-*" -c "$configFile" ; rm -f "$configFile"
 done
