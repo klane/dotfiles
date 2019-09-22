@@ -2,20 +2,8 @@
 
 set -e
 
-BASE_CONFIG="base"
-CONFIG_SUFFIX=".yaml"
-
 META_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BASE_DIR="$(dirname ${META_DIR})"
-
-PLUGIN_DIR="${META_DIR}/plugins"
-CONFIG_DIR="${META_DIR}/configs"
 PROFILE_DIR="${META_DIR}/profiles"
-
-DOTBOT_DIR="${META_DIR}/dotbot"
-DOTBOT_BIN="bin/dotbot"
-
-cd "${BASE_DIR}"
 
 while IFS= read -r config; do
     CONFIGS+=" ${config}"
@@ -23,10 +11,4 @@ done < "${PROFILE_DIR}/$1"
 
 echo "Configs in $1:${CONFIGS}"
 
-shift
-
-for config in ${CONFIGS} ${@}; do
-    echo -e "\nConfigure $config"
-    configFile="$(mktemp)" ; echo -e "$(<"${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")" > "$configFile"
-    "${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir "${PLUGIN_DIR}/dotbot-*" -c "$configFile" ; rm -f "$configFile"
-done
+"${META_DIR}/install-config" "${CONFIGS}"
