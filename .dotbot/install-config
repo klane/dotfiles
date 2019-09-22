@@ -10,7 +10,6 @@ BASE_DIR="$(dirname ${META_DIR})"
 
 PLUGIN_DIR="${META_DIR}/plugins"
 CONFIG_DIR="${META_DIR}/configs"
-PROFILES_DIR="${META_DIR}/profiles"
 
 DOTBOT_DIR="${META_DIR}/dotbot"
 DOTBOT_BIN="bin/dotbot"
