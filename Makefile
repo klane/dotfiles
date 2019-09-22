@@ -9,16 +9,14 @@ else
 	@make linux
 endif
 
-mac:
-	@make macos
-
-$(CONFIGS):
-	@make submodule
-	@.dotbot/install-config $@
-
-$(PROFILES):
-	@make submodule
-	@.dotbot/install-profile $@
+mac: macos
 
 submodule:
+	@echo "Updating submodules"
 	@git submodule update --init --recursive --remote
+
+$(CONFIGS): submodule
+	@.dotbot/install-config $@
+
+$(PROFILES): submodule
+	@.dotbot/install-profile $@
