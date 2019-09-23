@@ -110,6 +110,16 @@
     // commands
     "commands.commands": [
         {
+            "text": "$(gear)",
+            "command": "workbench.action.openGlobalSettings",
+            "tooltip": "Settings"
+        },
+        {
+            "text": "$(terminal)",
+            "command": "workbench.action.terminal.focus",
+            "tooltip": "Terminal"
+        },
+        {
             "text": "$(graph)",
             "command": "git-graph.view",
             "tooltip": "Git Graph"
