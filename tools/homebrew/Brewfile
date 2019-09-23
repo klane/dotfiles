@@ -13,6 +13,7 @@ brew 'gawk'
 brew 'gnu-sed'
 brew 'gnu-which'
 brew 'grep'
+brew 'make'
 brew 'rsync'
 brew 'wget'
 

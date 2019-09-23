@@ -8,6 +8,7 @@ switch (uname)
         set PATH /usr/local/opt/gnu-sed/libexec/gnubin $PATH
         set PATH /usr/local/opt/gnu-which/libexec/gnubin $PATH
         set PATH /usr/local/opt/grep/libexec/gnubin $PATH
+        set PATH /usr/local/opt/make/libexec/gnubin $PATH
     case '*'
         set PATH $PATH /c/Users/$USER/scoop/shims
         set PATH $PATH /c/Users/$USER/scoop/apps/oraclejdk8/current/bin
