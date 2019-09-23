@@ -1,0 +1,18 @@
+# limit line length and show a preview
+--max-columns=150
+--max-columns-preview
+
+# use glob patterns to include/exclude files or folders
+--glob=!git/*
+
+# set output colors
+# --colors=output:spec:color
+# output: [path,line,column,match]
+# spec: [fg,bg,style,none]
+# color: [black, blue, green, red, cyan, magenta, yellow, white]
+--colors=path:fg:green
+--colors=line:fg:yellow
+--colors=line:style:bold
+
+# ignore case when pattern is lowercase
+--smart-case
