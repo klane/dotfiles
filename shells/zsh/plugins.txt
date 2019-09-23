@@ -1,5 +1,5 @@
 robbyrussell/oh-my-zsh path:plugins/git
-robbyrussell/oh-my-zsh path:plugins/pyenv
+robbyrussell/oh-my-zsh path:plugins/asdf
 joshuarubin/zsh-direnv
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
