@@ -63,18 +63,20 @@ brew 'direnv'
 brew 'gnupg'
 brew 'openssh'
 
-# Programming Tools
-brew 'asdf'
+# Git
 brew 'diff-so-fancy'
 brew 'git'
 brew 'gitup'
 brew 'ghi'
 brew 'ghq'
-brew 'gradle'
 brew 'hub'
 brew 'lazygit'
 brew 'legit'
 brew 'pre-commit'
+
+# Programming Tools
+brew 'asdf'
+brew 'gradle'
 brew 'travis'
 
 # Python Tools
