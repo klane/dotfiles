@@ -1,6 +1,9 @@
 - link:
     ~/.config/flake8: tools/python/flake8
 
+- asdf:
+  - plugin: python
+
 - shell:
   - [$DOTFILES/tools/python/install-poetry, Installing poetry]
   - [echo 'eval (pipenv --completion)' > ~/.config/fish/completions/pipenv.fish, Adding pipenv fish completions]
