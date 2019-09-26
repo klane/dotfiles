@@ -3,4 +3,4 @@
     ~/.gitignore: tools/git/.gitignore
 
 - shell:
-    - [gitup --add ~/.repos, Add gitup bookmark to ~/.repos]
+    - [gitup --add $(ghq root), Add gitup bookmark to ghq root]
