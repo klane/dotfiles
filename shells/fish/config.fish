@@ -12,7 +12,7 @@ alias lc 'exa --all --long --git --group-directories-first --icons'
 alias lg lazygit
 alias loc 'tokei --sort lines'
 alias rgs 'rg --sort=path'
-alias tree 'lc --tree'
+alias tree 'lc --tree --ignore-glob .git'
 
 set -x PIPENV_VENV_IN_PROJECT true
 set -x RIPGREP_CONFIG_PATH ~/.config/ripgreprc
