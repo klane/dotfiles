@@ -18,6 +18,7 @@
   unpublish = !legit unpublish
   undo = !legit undo
   branches = !legit branches
+  graph = log --graph --oneline
 [color]
   ui = true
 [color "diff-highlight"]
