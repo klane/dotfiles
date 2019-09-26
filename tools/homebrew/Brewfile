@@ -32,6 +32,7 @@ brew 'speedtest-cli'
 brew 'thefuck'
 brew 'tmux'
 brew 'tokei'
+brew 'watchexec'
 
 # macOS Utilities
 brew 'mas' if OS.mac?
