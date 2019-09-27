@@ -20,5 +20,8 @@ set -x SHELL (brew --prefix)/bin/fish
 set -x DOTFILES ~/project/dotfiles
 set fish_greeting
 
+# enable conda
+source (conda info --root)/etc/fish/conf.d/conda.fish
+
 # Set prompt
 eval (starship init fish)
