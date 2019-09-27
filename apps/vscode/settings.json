@@ -3,6 +3,9 @@
     "editor.scrollBeyondLastLine": false,
 
     // files
+    "files.associations": {
+        "zshrc": "shellscript"
+    },
     "files.autoSave": "onFocusChange",
     "files.eol": "\n",
     "files.insertFinalNewline": true,
