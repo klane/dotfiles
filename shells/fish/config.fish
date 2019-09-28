@@ -21,6 +21,9 @@ set -x DOTFILES ~/project/dotfiles
 set -x FZF_COMPLETE 2
 set fish_greeting
 
+abbr -a nb 'jupyter-notebook'
+abbr -a lab 'jupyter-lab'
+
 # enable conda
 source (conda info --root)/etc/fish/conf.d/conda.fish
 
