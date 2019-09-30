@@ -16,4 +16,4 @@ jobs:
       - name: Linting
         run: |
           pip install pre-commit
-          pre-commit run --all-files --config tools/pre-commit/pre-commit-config.yaml
+          pre-commit run --all-files
