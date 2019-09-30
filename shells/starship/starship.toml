@@ -2,6 +2,10 @@
 error_symbol = "✗"
 use_symbol_for_status = true
 
+[battery]
+charging_symbol = "⚡️ "
+discharging_symbol = "⬇ "
+
 [[battery.display]]  # "bold red" style when capacity is between 0% and 10%
 threshold = 10
 style = "bold red"
