@@ -31,6 +31,7 @@ brew 'sd'
 brew 'speedtest-cli'
 brew 'thefuck'
 brew 'tmux'
+brew 'tmuxinator'
 brew 'tokei'
 brew 'watchexec'
 
