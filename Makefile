@@ -1,5 +1,5 @@
 MAKEFLAGS += --no-print-directory
-CONFIGS := $(shell ls .dotbot/configs | sd '.yaml' '')
+CONFIGS := $(shell ls .dotbot/configs | sed 's/.yaml//')
 PROFILES := $(shell ls .dotbot/profiles)
 
 all:
