@@ -16,4 +16,5 @@ jobs:
       - name: Linting
         run: |
           pip install pre-commit
+          pre-commit install-hooks
           pre-commit run --all-files
