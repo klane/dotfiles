@@ -19,6 +19,9 @@
   unpublish = !legit unpublish
   undo = !legit undo
   branches = !legit branches
+  check = !pre-commit run --all-files
+  up = !gitup
+  yaw = !gityaw
 [color]
   ui = true
 [color "diff-highlight"]
