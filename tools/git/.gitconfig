@@ -22,7 +22,7 @@
   check = !pre-commit run --all-files
   get = !ghq get -p
   up = !gitup
-  yaw = !gityaw
+  yaw = !fish -c gityaw
 [color]
   ui = true
 [color "diff-highlight"]
