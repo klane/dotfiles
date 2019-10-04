@@ -8,7 +8,7 @@ danhper/fish-ssh-agent
 decors/fish-colored-man
 laughedelic/pisces
 decors/fish-ghq
-oh-my-fish/plugin-jump
+klane/plugin-jump@root-folder
 jethrokuan/fzf
 oh-my-fish/plugin-gityaw
 oh-my-fish/plugin-cd
