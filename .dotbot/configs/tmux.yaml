@@ -1,5 +1,6 @@
 - ghq:
-  - tmux-plugins/tpm
+  - repo: tmux-plugins/tpm
+    flags: [-p]
 
 - link:
     ~/.tmux.conf: tools/tmux/tmux.conf
