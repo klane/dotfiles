@@ -156,5 +156,8 @@
         "git": "git",
         "profiles": "meta",
         "vscode": "vscode"
-    }
+    },
+
+    // comment anchors
+    "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,.tox,.venv,target,out,build,vendor}/**/*"
 }
