@@ -5,3 +5,4 @@
 - link:
     ~/.tmux.conf: tools/tmux/tmux.conf
     ~/.tmux/plugins/tpm: ~/.repos/github.com/tmux-plugins/tpm
+    ~/.config/tmuxinator/conda.yml: tools/tmux/conda.yml

@@ -1,0 +1,13 @@
+name: <%= @args[1] %>
+root: ./
+pre_window:
+  - jump <%= @args[0] %>
+  - conda activate <%= @args[1] %>
+windows:
+  - project:
+      layout: main-vertical
+      panes:
+        - git status --short; git diff --stat
+        - watchexec -c -w ~/.taskbook/storage/ tb
+        - jupyter lab --ContentsManager.allow_hidden=True
+  - info: htop
