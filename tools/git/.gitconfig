@@ -20,7 +20,7 @@
   undo = !legit undo
   branches = !legit branches
   check = !pre-commit run --all-files
-  get = !ghq get -p
+  get = !ghq get $1 && cd $(ghq root)/$(ghq list | grep $1) && git yaw
   up = !gitup
   yaw = !fish -c gityaw
 [color]
