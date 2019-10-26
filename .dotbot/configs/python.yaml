@@ -1,4 +1,5 @@
 - link:
+    ~/.condarc: tools/python/condarc
     ~/.config/flake8: tools/python/flake8
 
 - asdf:
