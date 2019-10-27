@@ -15,6 +15,7 @@ set -x PIPENV_VENV_IN_PROJECT true
 set -x RIPGREP_CONFIG_PATH ~/.config/ripgreprc
 set -x SHELL (brew --prefix)/bin/fish
 set -x DOTFILES ~/project/dotfiles
+set -x EDITOR subl
 set -x FZF_COMPLETE 2
 
 set fish_greeting
