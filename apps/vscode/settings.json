@@ -179,5 +179,8 @@
             "iconColor": "red",
             "scope": "workspace"
         }
-    ]
+    ],
+
+    // todo
+    "todo.statistics.statusbar.enabled": true
 }
