@@ -3,6 +3,7 @@ alias du 'du -h'
 alias git hub
 alias gu gitup
 alias htop 'htop --delay 10'
+alias jp 'jump project'
 alias lc 'exa --all --long --git --group-directories-first --icons'
 alias lg lazygit
 alias loc 'tokei --sort lines'
