@@ -15,7 +15,10 @@ set -x RIPGREP_CONFIG_PATH ~/.config/ripgreprc
 set -x SHELL (brew --prefix)/bin/fish
 set -x DOTFILES ~/project/dotfiles
 set -x FZF_COMPLETE 2
+
 set fish_greeting
+set fish_color_command green
+set fish_color_search_match --background=blue
 
 abbr -a nb 'jupyter-notebook'
 abbr -a lab 'jupyter-lab'
