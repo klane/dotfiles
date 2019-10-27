@@ -160,5 +160,24 @@
     },
 
     // comment anchors
-    "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,.tox,.venv,target,out,build,vendor}/**/*"
+    "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,.tox,.venv,target,out,build,vendor}/**/*",
+    "commentAnchors.scrollPosition": "center",
+    "commentAnchors.tags.sortMethod": "type",
+    "commentAnchors.tags.list": [
+        {
+            "tag": "TODO",
+            "iconColor": "green",
+            "scope": "workspace"
+        },
+        {
+            "tag": "FIXME",
+            "iconColor": "yellow",
+            "scope": "workspace"
+        },
+        {
+            "tag": "BUG",
+            "iconColor": "red",
+            "scope": "workspace"
+        }
+    ]
 }
