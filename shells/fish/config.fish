@@ -1,8 +1,3 @@
-function ignorehistory --on-event fish_prompt
-    set tmp df du fg bg ls la ll history which exit
-    echo all | history --delete -p $tmp > /dev/null
-end
-
 alias df 'df -h'
 alias du 'du -h'
 alias git hub
