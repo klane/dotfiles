@@ -95,7 +95,8 @@
 
     // project manager
     "projectManager.git.baseFolders": [
-        "/Users/klane/project"
+        "/Users/klane/project",
+        "/Users/klane/.repos/github.com/klane"
     ],
     "projectManager.git.maxDepthRecursion": 1,
     "projectManager.showProjectNameInStatusBar": false,
