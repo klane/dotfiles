@@ -145,6 +145,8 @@
         "*.toml": "toml",
         ".coverage": "codecov",
         ".pre-commit-config.yaml": "precommit",
+        "Cargo.lock": "cargo",
+        "Cargo.toml": "cargo",
         "pre-commit-config.yaml": "precommit",
         "Preferences.sublime-settings": "sublime",
         "pyproject.toml": "python-misc",
