@@ -4,8 +4,8 @@
 
 - link:
     ~/Library/Application Support/Code/User/settings.json: apps/vscode/settings.json
-    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/cargo.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.5.0/icons/file_type_cargo.svg
-    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/codecov.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.5.0/icons/file_type_codecov.svg
-    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/precommit.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.5.0/icons/file_type_precommit.svg
-    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/toml.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.5.0/icons/file_type_toml.svg
-    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/tox.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.5.0/icons/file_type_tox.svg
+    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/cargo.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.6.0/icons/file_type_cargo.svg
+    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/codecov.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.6.0/icons/file_type_codecov.svg
+    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/precommit.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.6.0/icons/file_type_precommit.svg
+    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/toml.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.6.0/icons/file_type_toml.svg
+    ~/.vscode/extensions/pkief.material-icon-theme-3.9.2/icons/tox.svg: ~/.vscode/extensions/vscode-icons-team.vscode-icons-9.6.0/icons/file_type_tox.svg
