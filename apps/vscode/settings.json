@@ -124,6 +124,16 @@
             "tooltip": "Terminal"
         },
         {
+            "text": "$(package)",
+            "command": "workbench.action.tasks.build",
+            "tooltip": "Run default build task"
+        },
+        {
+            "text": "$(beaker)",
+            "command": "workbench.action.tasks.test",
+            "tooltip": "Run default tests"
+        },
+        {
             "text": "$(graph)",
             "command": "git-graph.view",
             "tooltip": "Git Graph"
