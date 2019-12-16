@@ -12,7 +12,4 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v1
       - name: Linting
-        run: |
-          pip install pre-commit
-          pre-commit install-hooks
-          pre-commit run --all-files
+        uses: pre-commit/action@v1.0.0
