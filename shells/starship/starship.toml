@@ -13,3 +13,6 @@ style = "bold red"
 [[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
 threshold = 30
 style = "bold yellow"
+
+[java]
+style = "bold red"
