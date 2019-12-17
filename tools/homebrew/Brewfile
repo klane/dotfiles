@@ -81,7 +81,6 @@ brew 'asdf'
 brew 'bats'
 brew 'gradle'
 brew 'shellcheck'
-brew 'travis'
 
 # Python Tools
 brew 'black'
