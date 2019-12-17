@@ -3,8 +3,7 @@ name: Format
 on: push
 
 jobs:
-  build:
-    name: Linting
+  Linting:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
