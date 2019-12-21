@@ -13,7 +13,7 @@
   gpgsign = true
 [alias]
   graph = log --graph --oneline
-  branch-clean = !git branch | grep -v "master" | xargs git branch -D && git remote prune origin
+  branch-clean = !git branch | grep -v "master" | ifne xargs git branch -D && git remote prune origin
   switch = !legit switch
   sync = !legit sync
   publish = !legit publish
