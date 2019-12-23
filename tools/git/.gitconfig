@@ -41,3 +41,5 @@
   whitespace = red reverse
 [ghq]
   root = ~/.repos
+[push]
+	followTags = true
