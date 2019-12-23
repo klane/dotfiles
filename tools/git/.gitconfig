@@ -42,4 +42,4 @@
 [ghq]
   root = ~/.repos
 [push]
-	followTags = true
+  followTags = true
