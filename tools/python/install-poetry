@@ -1,7 +1,7 @@
 #!/usr/local/bin/fish
 
 if command -sq poetry
-    poetry self:update
+    poetry self update
 else
     curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 end
