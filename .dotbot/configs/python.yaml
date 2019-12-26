@@ -5,11 +5,12 @@
 - asdf:
   - plugin: python
     versions:
-      - 2.7.16
-      - 3.4.10
-      - 3.5.7
-      - 3.6.9
-      - 3.7.4
+      - latest:2.7
+      - latest:3.4
+      - latest:3.5
+      - latest:3.6
+      - latest:3.7
+      - latest:3.8
 
 - shell:
   - [$DOTFILES/tools/python/install-poetry, Installing poetry]
