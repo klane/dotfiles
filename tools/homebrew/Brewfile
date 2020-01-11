@@ -78,7 +78,7 @@ brew 'pre-commit'
 
 # Programming Tools
 brew 'asdf'
-brew 'bats'
+brew 'bats-core'
 brew 'gradle'
 brew 'shellcheck'
 
