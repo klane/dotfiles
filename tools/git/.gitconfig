@@ -12,17 +12,17 @@
 [commit]
   gpgsign = true
 [alias]
-  graph = log --graph --oneline
   branch-clean = !git branch | grep -v "master" | ifne xargs git branch -D && git remote prune origin
-  switch = !legit switch
-  sync = !legit sync
-  publish = !legit publish
-  unpublish = !legit unpublish
-  undo = !legit undo
   branches = !legit branches
   check = !pre-commit run --all-files
   get = !ghq get $1 && cd $(ghq root)/$(ghq list | grep $1) && git yaw
+  graph = log --graph --oneline
+  publish = !legit publish
+  switch = !legit switch
+  sync = !legit sync
   tag-poetry = !poetry version | cut -d' ' -f2 | xargs -I {} git tag -a v{} -m 'Release {}' -s
+  undo = !legit undo
+  unpublish = !legit unpublish
   up = !gitup
   yaw = !fish -c gityaw
 [color]
