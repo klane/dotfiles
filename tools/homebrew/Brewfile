@@ -1,7 +1,6 @@
 # Taps
 tap 'homebrew/cask' if OS.mac?
 tap 'homebrew/cask-fonts' if OS.mac?
-tap 'homebrew/cask-versions' if OS.mac?
 
 # Dupes
 brew 'coreutils'
