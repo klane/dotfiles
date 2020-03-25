@@ -61,9 +61,9 @@ brew 'gnupg'
 brew 'openssh'
 
 # Git
-brew 'diff-so-fancy'
 brew 'git'
 brew 'gitup'
+brew 'git-delta'
 brew 'gh'
 brew 'ghq'
 brew 'hub'
