@@ -20,6 +20,7 @@ set -x FZF_COMPLETE 2
 
 set fish_greeting
 set fish_color_command green
+set fish_color_error red --bold
 set fish_color_search_match --background=blue
 
 abbr -a nb 'jupyter-notebook'
