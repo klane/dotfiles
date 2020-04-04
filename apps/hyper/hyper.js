@@ -195,11 +195,13 @@ module.exports = {
         opacity: 0.5,
       },
       mapIcons: {
+        git: ['lazygit'],
         ruby: ['brew', 'brewup']
       },
       mapColors: {
         brew: '#D8494F',
-        brewup: '#D8494F'
+        brewup: '#D8494F',
+        lazygit: '#F1502F'
       },
       disableColors: false
     },
