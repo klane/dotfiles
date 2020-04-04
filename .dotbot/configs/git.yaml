@@ -1,6 +1,7 @@
 - link:
     ~/.gitconfig: tools/git/.gitconfig
     ~/.gitignore: tools/git/.gitignore
+    ~/Library/Application Support/jesseduffield/lazygit/config.yml: tools/git/lazygit.yml
 
 - shell:
   - [gitup --add $(ghq root), Add gitup bookmark to ghq root]
