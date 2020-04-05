@@ -48,6 +48,7 @@ brew 'wtf'
 # Shells
 brew 'bash'
 brew 'fish'
+brew 'nushell'
 brew 'zsh'
 brew 'antibody'
 brew 'starship'
