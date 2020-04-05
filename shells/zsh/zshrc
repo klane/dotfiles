@@ -47,4 +47,4 @@ source <(antibody init)
 antibody bundle < ~/.zsh_plugins.txt
 
 # Set prompt
-eval "$(starship init $0)"
+eval "$(starship init zsh)"

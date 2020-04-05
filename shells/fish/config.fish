@@ -30,4 +30,4 @@ abbr -a lab 'jupyter-lab'
 source (conda info --root)/etc/fish/conf.d/conda.fish
 
 # Set prompt
-eval (starship init fish)
+starship init fish | source
