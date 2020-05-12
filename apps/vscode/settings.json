@@ -1,5 +1,7 @@
 {
     // editor
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": "'ss02', 'ss03', 'ss05', 'ss07'",
     "editor.scrollBeyondLastLine": false,
 
     // files
@@ -16,7 +18,6 @@
     "telemetry.enableCrashReporter": false,
 
     // terminal
-    "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
 
     // theme
