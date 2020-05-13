@@ -1,5 +1,8 @@
 reporting: "off"
 startuppopupversion: 1
+gui:
+  scrollHeight: 3
+  scrollPastBottom: false
 git:
   paging:
     colorArg: always
