@@ -230,33 +230,6 @@ module.exports = {
       focusOnMouseHover: true,
       inactivePaneOpacity: 0.2 // Set to 1 to disable inactive panes dimming
     },
-
-    hyperCustomTouchbar: [
-      // if you just need a single button then don't add options array
-      { command: 'exit', label: 'exit', backgroundColor: '#d13232' },
-      { command: 'clear', label: 'clear', backgroundColor: '#d13232' },
-      { command: 'cd ~', icon: '/Users/klane/Pictures/icons8-home.png' },
-      {
-        icon: '/Users/klane/Pictures/icons8-robot.png',
-        options: [
-          { label: 'mac', command: '$DOTFILES/install-profile macos', icon: '/Users/klane/Pictures/icons8-mac_os_filled.png' },
-          { label: 'homebrew', command: '$DOTFILES/install-config homebrew', icon: '/Users/klane/Pictures/icons8-beer.png' },
-          { label: 'python', command: '$DOTFILES/install-config python', icon: '/Users/klane/Pictures/icons8-python.png' },
-          { label: 'shell', command: '$DOTFILES/install-config fish zsh', icon: '/Users/klane/Pictures/icons8-shell.png' }
-        ]
-      },
-      {
-        icon: '/Users/klane/Pictures/icons8-git.png',
-        options: [
-          { label: 'status', command: 'git status' },
-          { label: 'diff', command: 'git diff', icon: '/Users/klane/Pictures/icons8-diff_files.png' },
-          { label: 'log', command: 'git log -n 5', icon: '/Users/klane/Pictures/icons8-note.png' },
-          { label: 'add', command: 'git add .', icon: '/Users/klane/Pictures/icons8-add_list.png' },
-          { label: 'push', command: 'git push', icon: '/Users/klane/Pictures/icons8-upload.png' },
-          { label: 'pull', command: 'git pull', icon: '/Users/klane/Pictures/icons8-download.png' }
-        ]
-      }
-    ],
   },
 
   // a list of plugins to fetch and install from npm
@@ -285,12 +258,8 @@ module.exports = {
     'hyper-tab-icons-plus',
 
     // extensions
-    'hyper-custom-touchbar',
     'hyper-search',
-    'hyper-statusline',
-
-    // fun
-    'hyperpower'
+    'hyper-statusline'
   ],
 
   // in development, you can create a directory under
