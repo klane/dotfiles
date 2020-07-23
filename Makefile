@@ -13,7 +13,7 @@ mac: macos
 
 submodule:
 	@echo "Updating submodules"
-	@git submodule update --init --recursive --remote
+	@git submodule update --init --remote
 
 $(CONFIGS): submodule
 	@.dotbot/install-config $@
