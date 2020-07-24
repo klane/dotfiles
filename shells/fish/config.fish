@@ -7,6 +7,7 @@ alias jp 'jump project'
 alias lc 'exa --all --long --git --group-directories-first --icons'
 alias lg lazygit
 alias loc 'tokei --sort lines'
+alias pipinit 'pipenv --python (asdf which python)'
 alias rgs 'rg --sort=path'
 alias tree 'lc --tree --ignore-glob .git'
 
