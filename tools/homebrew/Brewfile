@@ -103,6 +103,7 @@ cask 'inkscape'
 # Database
 cask 'db-browser-for-sqlite'
 cask 'dbeaver-community'
+brew 'pgcli'
 cask 'postgres'
 cask 'postico'
 cask 'tableplus'
