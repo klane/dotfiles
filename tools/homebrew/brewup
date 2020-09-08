@@ -13,7 +13,7 @@ brew upgrade
 
 if [ "$(uname)" == "Darwin" ]; then
     gecho 'Upgrading outdated casks'
-    brew cask upgrade
+    brew upgrade --cask
 fi
 
 gecho 'Installing missing packages'
