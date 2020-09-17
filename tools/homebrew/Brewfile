@@ -109,6 +109,7 @@ cask 'postico'
 cask 'tableplus'
 
 # Casks
+cask 'authy'
 cask 'boostnote'
 cask 'cakebrew'
 cask 'cheatsheet'
