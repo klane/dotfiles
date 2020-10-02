@@ -1,7 +1,6 @@
 [character]
-symbol = "λ"
-error_symbol = "✘"
-use_symbol_for_status = true
+success_symbol = "[λ](bold green)"
+error_symbol = "[✘](bold red)"
 
 [battery]
 charging_symbol = "⚡️ "
