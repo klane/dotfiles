@@ -62,6 +62,7 @@ brew 'gnupg'
 brew 'openssh'
 
 # git
+brew 'bfg'
 brew 'git'
 brew 'gitup'
 brew 'git-delta'
