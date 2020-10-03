@@ -1,8 +1,8 @@
-# Taps
+# taps
 tap 'homebrew/cask' if OS.mac?
 tap 'homebrew/cask-fonts' if OS.mac?
 
-# Dupes
+# dupes
 brew 'coreutils'
 brew 'curl'
 brew 'diffutils'
@@ -15,7 +15,7 @@ brew 'make'
 brew 'rsync'
 brew 'wget'
 
-# Utilities
+# utilities
 brew 'bat'
 brew 'exa'
 brew 'fasd'
@@ -34,18 +34,18 @@ brew 'tmuxinator'
 brew 'tokei'
 brew 'watchexec'
 
-# macOS Utilities
+# mac utilities
 brew 'mas' if OS.mac?
 brew 'osxutils' if OS.mac?
 brew 'pinentry-mac' if OS.mac?
 brew 'trash' if OS.mac?
 
-# Information Utilities
+# information utilities
 brew 'howdoi'
 brew 'tldr'
 brew 'wtf'
 
-# Shells
+# shells
 brew 'bash'
 brew 'fish'
 brew 'nushell'
@@ -53,15 +53,15 @@ brew 'zsh'
 brew 'antibody'
 brew 'starship'
 
-# Programming Languages
+# programming languages
 brew 'python'
 
-# Utilities
+# utilities
 brew 'direnv'
 brew 'gnupg'
 brew 'openssh'
 
-# Git
+# git
 brew 'git'
 brew 'gitup'
 brew 'git-delta'
@@ -73,35 +73,35 @@ brew 'lazygit'
 brew 'legit'
 brew 'pre-commit'
 
-# Programming Tools
+# programming tools
 brew 'asdf'
 brew 'bats-core'
 brew 'gradle'
 brew 'shellcheck'
 
-# Python Tools
+# python tools
 brew 'black'
 brew 'flake8'
 brew 'mkdocs'
 brew 'mypy'
 brew 'pipenv'
 
-# Support Casks
+# support casks
 cask 'xquartz'
 
-# IDEs & Editors
+# editors
 cask 'jetbrains-toolbox'
 cask 'rstudio'
 cask 'sublime-text'
 cask 'visual-studio-code'
 
-# Images
+# images
 brew 'imagemagick'
 cask 'gimp'
 cask 'icons8'
 cask 'inkscape'
 
-# Database
+# database
 cask 'db-browser-for-sqlite'
 cask 'dbeaver-community'
 brew 'pgcli'
@@ -109,7 +109,7 @@ cask 'postgres'
 cask 'postico'
 cask 'tableplus'
 
-# Casks
+# casks
 cask 'authy'
 cask 'battle-net'
 cask 'boostnote'
