@@ -1,4 +1,4 @@
-![](https://github.com/klane/dotfiles/workflows/Format/badge.svg)
+[![Test Status](https://github.com/klane/dotfiles/workflows/Format/badge.svg)](https://github.com/klane/dotfiles/actions)
 
 # Installation
 
