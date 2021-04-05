@@ -21,4 +21,4 @@ jobs:
           restore-keys: |
             pre-commit|${{ steps.hash.outputs.hash }}
       - name: Linting
-        uses: pre-commit/action@v2.0.0
+        uses: pre-commit/action@v2.0.2
