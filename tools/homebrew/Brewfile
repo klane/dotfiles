@@ -1,6 +1,7 @@
 # taps
 tap 'homebrew/cask' if OS.mac?
 tap 'homebrew/cask-fonts' if OS.mac?
+tap 'mas-cli/tap' if OS.mac?
 
 # dupes
 brew 'coreutils'
@@ -35,7 +36,7 @@ brew 'tokei'
 brew 'watchexec'
 
 # mac utilities
-brew 'mas' if OS.mac?
+brew 'mas-cli/tap/mas' if OS.mac?
 brew 'osxutils' if OS.mac?
 brew 'pinentry-mac' if OS.mac?
 brew 'trash' if OS.mac?
