@@ -8,8 +8,8 @@ function gecho() {
 gecho 'Updating Homebrew'
 brew update
 
-gecho 'Upgrading outdated brews'
-brew upgrade
+gecho 'Upgrading outdated formulae'
+brew upgrade --formula
 
 if [ "$(uname)" == "Darwin" ]; then
     gecho 'Upgrading outdated casks'
