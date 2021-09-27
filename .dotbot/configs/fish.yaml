@@ -1,6 +1,6 @@
 - link:
     ~/.config/fish/config.fish: shells/fish/config.fish
-    ~/.config/fish/fishfile: shells/fish/fishfile
+    ~/.config/fish/fish_plugins: shells/fish/plugins
     ~/.config/fish/conf.d/addpath.fish: shells/fish/addpath.fish
     ~/.config/fish/functions/gcd.fish: shells/fish/functions/gcd.fish
     ~/.config/fish/functions/replace.fish: shells/fish/functions/replace.fish
@@ -8,4 +8,4 @@
 
 - shell:
   - [$DOTFILES/shells/fish/install-fisher, Installing Fisher]
-  - [fish -c fisher, Updating fish plugins]
+  - [fish -c "fisher update", Updating fish plugins]

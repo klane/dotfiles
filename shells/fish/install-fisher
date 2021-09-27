@@ -1,7 +1,7 @@
 #!/usr/local/bin/fish
 
 if functions -q fisher
-    fisher self-update
+    fisher update jorgebucaran/fisher
 else
-    curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+    curl -sL https://git.io/fisher | source && fisher install < ~/.config/fish/fish_plugins
 end
