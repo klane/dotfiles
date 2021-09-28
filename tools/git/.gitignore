@@ -11,6 +11,7 @@
 .envrc
 
 # Python
+.ipynb_checkpoints/
 *.pyc
 
 # Language versions
