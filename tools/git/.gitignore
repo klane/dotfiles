@@ -1,19 +1,17 @@
-# Mac
+# macOS
 .DS_Store
 
-# IntelliJ IDEA & PyCharm
+# editors
 .idea/
-
-# Visual Studio Code
 .vscode/
-
-# direnv
-.envrc
 
 # Python
 .ipynb_checkpoints/
 *.pyc
 
-# Language versions
+# language versions
 .python-version
 .tool-versions
+
+# direnv
+.envrc
