@@ -36,7 +36,6 @@ export DOTFILES=~/project/dotfiles
 eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1
 
-alias git=hub
 alias lc='exa --all --long --git --group-directories-first --icons'
 
 # Configure Antibody

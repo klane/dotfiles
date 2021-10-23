@@ -15,7 +15,6 @@ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 #scoop install git
 #scoop install gradle
 #scoop install grep
-#scoop install hub
 #scoop install lazygit
 #scoop install sed
 #scoop install sudo

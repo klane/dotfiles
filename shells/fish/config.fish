@@ -1,6 +1,5 @@
 alias df 'df -h'
 alias du 'du -h'
-alias git hub
 alias gu gitup
 alias htop 'htop --delay 10'
 alias jp 'jump project'
