@@ -3,6 +3,7 @@ iwr -useb get.scoop.sh | iex
 
 # add necessary buckets
 #scoop bucket add extras
+#scoop bucket add nerd-fonts
 #scoop bucket add java
 
 # install command line tools
