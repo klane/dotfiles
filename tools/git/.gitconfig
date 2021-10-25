@@ -2,6 +2,8 @@
   name = Kevin Lane
   email = lane.kevin.a@gmail.com
   signingkey = 1C86152D9F2E3D7F
+[init]
+  defaultBranch = main
 [core]
   autocrlf = false
   editor = 'subl' --wait
