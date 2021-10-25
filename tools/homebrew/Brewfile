@@ -59,9 +59,6 @@ brew 'zsh'
 brew 'antibody'
 brew 'starship'
 
-# programming languages
-brew 'python'
-
 # utilities
 brew 'direnv'
 brew 'gnupg'
