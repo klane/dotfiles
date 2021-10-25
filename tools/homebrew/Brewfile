@@ -41,6 +41,11 @@ brew 'osxutils' if OS.mac?
 brew 'pinentry-mac' if OS.mac?
 brew 'trash' if OS.mac?
 
+mas 'DaisyDisk', id: 411643860 if OS.mac?
+mas 'Gestimer', id: 990588172 if OS.mac?
+mas 'iStat Menus', id: 1319778037 if OS.mac?
+mas 'Magnet', id: 441258766 if OS.mac?
+
 # information utilities
 brew 'howdoi'
 brew 'tldr'
