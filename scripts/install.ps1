@@ -1,5 +1,5 @@
 # install scoop
-iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+iwr -useb get.scoop.sh | iex
 
 # add necessary buckets
 #scoop bucket add extras
