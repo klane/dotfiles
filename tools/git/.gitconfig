@@ -18,6 +18,7 @@
   get = !ghq get $1 && cd $(ghq root)/$(ghq list | grep $1) && git yaw
   graph = log --graph --oneline
   publish = !legit publish
+  resign = !git rebase --exec 'git commit --amend --no-edit -n -S' -i $1
   switch = !legit switch
   sync = !legit sync
   tag-poetry = !poetry version | cut -d' ' -f2 | xargs -I {} git tag -a v{} -m 'Release {}' -s
